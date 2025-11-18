@@ -1,0 +1,457 @@
+---
+title: "Final Report: IMDb Movies Dataset"
+
+author: 
+  - "Adam Rychtecky"
+  - "Erin Smith"
+  - "Ali Shahid"
+  - "Miao Qi"
+  - "Matthew Arteaga"
+  
+  
+date: "3/05/2025"
+format:
+  pdf:
+    echo: false
+    toc: true
+    number-sections: false
+    fontsize: 11pt
+    linestretch: 1.25
+    code: false
+    colorlinks: true
+    mainfont: Times New Roman
+    geometry: a4paper
+header-includes: |
+  \usepackage{fancyhdr}
+  \pagestyle{fancy}
+  \fancyhead[L]{PSTAT126 Project}
+  \fancyhead[C]{}
+  \fancyhead[R]{\thepage}
+---
+
+
+```{r, include=FALSE}
+#load data
+library(readxl)
+library(dplyr)
+library(corrplot)
+library(jsonlite)
+library(ggplotify)
+library(grid)
+library(gridExtra)
+library(olsrr)
+library(ggrepel)
+library(see)
+library(performance)
+library(MASS)
+library(car)
+library(kableExtra)
+library(gt)
+library(tidyr)
+library(lmtest)
+library(nortest)
+setwd("C:/Users/matth/OneDrive/Desktop/PSTAT 126")
+q1_USA <- as.data.frame(read.csv("q1_USA.csv"))
+Blockbuster <- q1_USA[q1_USA$budget > 100000000, ]
+data<-read.csv("movies_duration_genre.csv")
+```
+\newpage
+# 1. Abstract
+
+This Report investigates how multiple linear regression can be applied to analyze the relationship between a movie's Grossing World Wide with five key predictor variables (Question 1), as well as the relationship between the number of Drama and Action movies released with the year that they were released (Question 2). For each of these questions, data was cleaned to remove potential outliers and or observations that lacked necessary information. From there, the data was initially explored by analyzing summary statistics of the variables of interest as well as preliminary plots to examine the linearity of the data. For Question 1, Stepwise Variable selection was utilized as well as a Box-Cox transformation. For each question a Linear Model was produced and it's overall significance as well as individual significance for each predictor variable was analyzed. The models produced for both questions were found to be statistically significant, supporting the initial hypotheses proposed.
+
+# 2. Introduction
+
+## 2.1 **Dataset Overview**
+
+The dataset, sourced from Kaggle, consists of movies released between 1960 and 2024. Key variables include:Budget (production cost), Gross Worldwide Revenue (total earnings), Rating (IMDB audience score), Votes (number of votes), Nominations (number of award recognition), Duration (runtime in minutes), Year of Release (temporal aspect), genres (genres in movie), countries_origin (countries in filming).By examining these social and economic factors of the movie making industry we aim to make significant inferences of movie success and attributes in the industry. 
+
+## 2.2 **Research Questions and Hypotheses**
+
+The film industry has undergone significant transformations over the years, with advancements in technology, changing audience preferences, and evolving economic factors shaping movie production and success. This study explores two key questions related to movie success and industry trends using multiple regression analysis.The first being, what are the best indicators for a blockbuster movies success in the form of gross world wide income? We hypothesize that budget will have the highest effect on income due to it contributing to the creation of economically successful movies. Secondly, we wonder how has movie duration evolved over time and can a movie’s genre help predict average movie duration? We hypothesize that movie duration has slowly been increasing over time as technology advances, and that the rate of increase differs depending on the genre.
+\newpage
+
+## 2.3 **Data Preparation**
+
+### **2.3.1 Data Cleaning**
+
+Data cleaning and preprocessing were critical steps in preparing the dataset for regression analysis. The original dataset of every movie between the years of 1960 to 2024 was extremely large with lots of missing data. We reasoned that most of the missing data was from small unkown movies that did not fit the agenda of the research study. We also found that budget was not standardized to USD. To get around this we switched the aim of the research study to only United States made movies. This greatly reduced the number of observations and missing data. Removing the rest of the missing data left us with just over 7000 observations. Then for each research question we further cleaned the data to fit the objective of the research.
+
+(Identifying outliers)
+
+### **2.3.2 Exploratory Data Analysis (EDA)**
+
+Summary Statistics of Key Variables:
+
+```{r, echo=FALSE, fig.width=7, fig.height=0.5}
+Blockbuster_sum <- Blockbuster %>% dplyr::select(-c(Year))
+numeric_columns <- sapply(Blockbuster_sum, is.numeric)
+summary(Blockbuster_sum[, numeric_columns], digits = 3)
+```
+
+Visualizations:
+
+```{r, echo=FALSE, fig.width=7, fig.height=4}
+plot1<-ggplot(Blockbuster, aes(x = budget, y = grossWorldWide)) +
+  geom_point(color = "blue", alpha = 0.6) +  # Scatter points
+  labs(x = "Budget",
+       y = "Gross Worldwide Revenue") +
+  theme_minimal()
+plot2<-ggplot(Blockbuster, aes(x = Votes, y = grossWorldWide)) +
+  geom_point(color = "blue", alpha = 0.6) +  # Scatter points
+  labs(x = "Votes",
+       y = "Gross Worldwide Revenue") +
+  theme_minimal()
+grid.arrange(plot1,plot2,ncol=2)
+```
+
+Both the scatterplots of `grossWorldWide` vs. `budget` and `grossWorldWide` vs. `Votes` indicate a likely linear positive relationship between the respective predictor variables and our selected response variable.
+
+
+# 3. Regression Modeling Process
+
+## 3.1 Model Selection
+
+As part of our analysis, we first conducted an exploratory data analysis (EDA) to assess the distribution of key variables. A boxplot analysis of the budget variable revealed it had the highest spread and the greatest number of outliers. Given the large variance in production budgets across films, we chose to focus our analysis on blockbuster-level movies, defined as those with a high production budget. This subset refinement reduced the dataset to 422 observations, allowing us to analyze films with a comparable scale of investment and revenue potential. After initial tests of different candidate models 4 stood out among all trials given below.
+
+In order to investigate whether multicollinearity exists between the five selected predictor variables, we can analyze the VIF values produced from the initial model including the six key variables: grossWorldWide, Rating, budget, Votes, total_minutes, and nominations in which grossWorldWide is the response variable (in USD) and the rest are predictor variables.
+
+```{r, echo=FALSE, include=FALSE}
+FullModel<-lm(grossWorldWide ~ (Votes +  budget + Rating + nominations + total_minutes), data = Blockbuster)
+vif_values<-as.data.frame(t(vif(FullModel)))
+kable(vif_values,caption="VIF Values for Predictor Variables")
+```
+
+Based on the VIF values, because none of them even exceed a value of three, it is fair to assume that there is no concern of multicollinearity between the predictor variables. This is consistent with the investigation of the correlation matrix.
+
+```{r, echo=FALSE, include=FALSE}
+library(stringr)
+#four candidate models we need to put them in table form
+
+ModelAll<-ols_step_all_possible(FullModel)
+Results <- ModelAll$result
+top_models <- Results[c(6,16,26,31),] %>%
+  dplyr::select(adjr, cp, aic, sbic, rmse) %>%
+  mutate(
+    Model = case_when(  # Shorten observation names
+      row_number() == 1 ~ "VB",
+      row_number() == 2 ~ "VBR",
+      row_number() == 3 ~ "VBRN",
+      row_number() == 4 ~ "VBRNT",
+      TRUE ~ as.character(row_number())  # Default (if more rows added)
+    )
+  ) %>%
+  dplyr::select(Model, everything())
+
+gt(top_models) %>%
+  tab_header(title = "Top Selected Regression Models") %>%
+  fmt_number(columns = c(adjr, cp, aic, sbic, rmse), decimals = 3) %>%
+  cols_label(
+    adjr = "Adjusted R-Squared",
+    cp = "Mallows' Cp",
+    aic = "Akaike Information Criterion (AIC)",
+    sbic = "Schwarz Bayesian Information Criterion (BIC)",
+    rmse = "Root Mean Squared Error (RMSE)"
+  ) %>%
+  cols_width(   # Ensures text wraps instead of stretching the page
+    everything() ~ px(100)  # Sets width for all other columns
+  ) %>%
+  tab_options(
+    table.width = pct(90)   # Keeps table within page limits
+  ) %>%
+  tab_style(
+    style = cell_fill(color = "lightgray"), 
+    locations = cells_body(
+      rows = c(1,3)  # Apply to odd rows 
+    )
+  ) 
+```
+
+
+To determine the most appropriate predictive model for grossWorldWide, we applied the Box-Cox transformation to the response variable across four candidate models, each yielding its respective optimal lambda value. Following the transformation, we evaluated the models based on key selection criteria, including AIC, BIC, and Adjusted R². Model 2, which included Votes, budget, and Rating as predictors, demonstrated superior performance in terms of model fit and explanatory power, making it the preferred choice.
+
+```{r, echo=FALSE, results="asis"}
+# Define Models
+modelA <- lm(grossWorldWide ~ Votes + budget, data = Blockbuster)
+modelB <- lm(grossWorldWide ~ Votes + budget + Rating, data = Blockbuster)
+modelC <- lm(grossWorldWide ~ Votes + budget + Rating + nominations, data = Blockbuster)
+FullModel <- lm(grossWorldWide ~ total_minutes + Votes + nominations + budget + Rating, data = Blockbuster)
+
+# Define lambda range for Box-Cox transformation
+lambda_range <- seq(-2, 2, by = 0.1)
+
+# Function to get optimal lambda **without plotting**
+get_lambda <- function(model, lambda_range) {
+  suppressWarnings(  # Suppresses warnings in case of edge cases
+    boxcox_result <- boxcox(model, lambda = lambda_range, plot = FALSE)  # Correct way to suppress plot
+  )
+  return(boxcox_result$x[which.max(boxcox_result$y)])  # Extract optimal lambda
+}
+
+# Compute Box-Cox lambdas
+lambda_A <- get_lambda(modelA, lambda_range)
+lambda_B <- get_lambda(modelB, lambda_range)
+lambda_C <- get_lambda(modelC, lambda_range)
+lambda_D <- get_lambda(FullModel, lambda_range)
+
+# Apply transformation to the response variable
+Blockbuster$grossWorldWide_transformed_A <- (Blockbuster$grossWorldWide^lambda_A - 1) / lambda_A
+Blockbuster$grossWorldWide_transformed_B <- (Blockbuster$grossWorldWide^lambda_B - 1) / lambda_B
+Blockbuster$grossWorldWide_transformed_C <- (Blockbuster$grossWorldWide^lambda_C - 1) / lambda_C
+Blockbuster$grossWorldWide_transformed_D <- (Blockbuster$grossWorldWide^lambda_D - 1) / lambda_D
+
+# Fit transformed models
+modelD_transformed <- lm(grossWorldWide_transformed_D ~ total_minutes + Votes + nominations + budget + Rating, data = Blockbuster)
+modelC_transformed <- lm(grossWorldWide_transformed_C ~ Votes + nominations + budget + Rating, data = Blockbuster)
+modelB_transformed <- lm(grossWorldWide_transformed_B ~ Votes + Rating + budget, data = Blockbuster)
+modelA_transformed <- lm(grossWorldWide_transformed_A ~ Votes + budget, data = Blockbuster)
+
+# Compare model performance
+comparison_results <- compare_performance(
+  modelA_transformed, modelB_transformed, modelC_transformed, modelD_transformed
+) %>%
+  as.data.frame() %>%
+  dplyr::select(Name, AIC, BIC, R2_adjusted, RMSE)  # Ensure correct column selection
+
+# Create a visually appealing table with gt
+table_output <- gt(comparison_results) %>%
+  tab_header(title = "Model Performance Comparison") %>%
+  fmt_number(columns = c(AIC, BIC, R2_adjusted, RMSE), decimals = 3) %>%
+  cols_label(
+    Name = "Model",
+    AIC = "AIC",
+    BIC = "BIC",
+    R2_adjusted = "AdjR2",
+    RMSE = "RMSE"
+  ) %>%
+  tab_style(style = cell_borders(sides = "bottom", weight = px(2)), locations = cells_body()) %>%
+  tab_style(
+    style = cell_fill(color = "lightgray"), 
+    locations = cells_body(
+      rows = c(1,3)   
+    )
+  )
+# Select best model
+best_model <- modelB_transformed
+comparison_results %>%
+  kbl(format = "latex", booktabs = TRUE) %>%
+  kable_styling(latex_options = "HOLD_position") %>%
+  print()
+
+```
+
+
+
+To ensure the robustness of our results, we conducted an outlier analysis, identifying approximately 6% of the observations as influential points based on Cook’s Distance and leverage diagnostics. After removing these observations, we re-estimated the model, leading to substantial improvements in overall model performance.
+```{r, echo=FALSE}
+# Step 2: Identify Residual Outliers
+Blockbuster$residuals <- rstandard(best_model)
+
+# Standardized Residuals (Outliers if |Residual| > 3)
+outliers_std_resid <- which(abs(Blockbuster$residuals) > 3)
+
+# Cook’s Distance (Influential Points if Cook's D > 1)
+cook_dist <- cooks.distance(best_model)
+outliers_cook <- which(cook_dist > 1)
+
+# Leverage Points (Outliers if leverage > 2(k+1)/n)
+leverage <- hatvalues(best_model)
+cutoff_leverage <- (2 * (length(coefficients(best_model)))) / nrow(Blockbuster)
+outliers_leverage <- which(leverage > cutoff_leverage)
+
+
+
+# Step 3: Remove Outliers & Refit Model
+outliers_all <- unique(c(outliers_std_resid, outliers_cook, outliers_leverage))
+
+if (length(outliers_all) > 0) {
+  Blockbuster_clean <- Blockbuster[-outliers_all, ]
+} else {
+  Blockbuster_clean <- Blockbuster  # No outliers detected, use original data
+}
+
+best_model_clean <- lm(grossWorldWide_transformed_D ~ budget + Votes+ Rating, data = Blockbuster_clean)
+```
+
+## 3.2 Model Results
+
+After performing A Stepwise selection on the transformed data, the key variables selected for the model include: `budget`, `Votes`, and `Rating`. After removal of influential points based on Cook's distance and leverage diagnostics, the best model for predicting `grossWorldWide` comes out to be:
+
+$$
+\begin{aligned}
+\small{\hat{gWW}=1.543*10^3+1.574*10^{-5}b+3.833*10^{-3}V+2.481*10^2R}
+\end{aligned}
+$$
+Where:
+
+* $\hat{gWW}$: grossWorldWide in USD
+* $b$: budget in USD
+* $V$: number of votes on IMDb
+* $R$: IMDb Rating
+
+```{r}
+options(scipen=20)
+lmTable<-as.matrix(summary(best_model_clean)$coefficients)
+kable(lmTable,caption="Coefficients and Significance",digits=20)
+```
+
+The p-values generated from the linear model indicate that at $\alpha=0.05$, we reject the null hypothesis that the coefficients for the predictor variables: `budget` and `Votes` are equal to zero, thus they have a meaningful impact on `grossWorldWide` in this model. However at $\alpha=0.05$, we fail to reject the null hypothesis that the coefficient for the `Rating` predictor variable is equal to zero.
+
+Interpretation of Significant Predictors:
+
+* `budget` coefficient: for every one dollar increase to `budget`, `grossWorldWide` is expected to increase by $1.574*10^{-5}$ dollars.
+* `Votes` coefficient: for every additional vote on IMDb, `grossWorldWide` is expected to increase by $2.481*10^2$ dollars.
+
+### 3.2.1 Assumptions
+
+ A subsequent assessment of regression assumptions was conducted to validate the reliability of the refined model in predicting grossWorldWide. The Shapiro-Wilk test for normality yielded a p-value of 0.098, confirming that the residuals follow a normal distribution (assumption met). The Breusch-Pagan test for homoscedasticity returned a p-value of 0.167, indicating constant variance of residuals (assumption met). Additionally, the Durbin-Watson test for independence of errors produced a p-value of 0.228, confirming that autocorrelation was not present in the residuals (assumption met). In addition to these numeric tests plots for each are shown below. These results collectively validate the suitability of the model, ensuring compliance with the fundamental assumptions of linear regression.
+ 
+```{r, fig.width=10, fig.height=6, echo=FALSE, message=FALSE, warning=FALSE}
+par(mfrow = c(2, 2), mar = c(2, 2, 1, 1))  # Reduce margins
+plot(best_model_clean)
+```
+
+## 3.3 Recommendations
+
+Based on the findings of our model, specifically when investigating the significance of our coefficients, one improvement that could be made to our model would be to remove the `Rating` predictor variable as it is not statistically significant at $\alpha=0.05$. Additionally, to improve our model, we might want to investigate other predictor variables outside the scope of our dataset to improve our adjusted $R^2$ value, which is `0.466` with our current model.
+
+# Conclusion
+
+Our Initial hypothesis was that a movie's Grossing World Wide could be predicted with a linear combination of the selected key variables: `budget`, `Rating`, `Votes`, `total_minutes`, and `nominations`. Based on the regression model, this hypothesis was partially supported as we found that only `budget`, `Rating`, and `Votes` were required for the model of best fit based on Stepwise variable selection. Upon Analysis of the p-values yielded from the Linear Model, we found that the `Rating` predictor was statistically insignificant in the model. With the initial investigation of the VIF values produced from the full model, no concern of multicollinearity was found so no Ridge Regression was warranted for the model. 
+
+
+\newpage
+
+# 4. Hypothesis 2
+
+## 4.1 **Data Preparation**
+
+```{r, echo=FALSE, include=FALSE}
+###Outlier Cleaning, using Grubb's Test
+
+
+data<- data[data$total_minutes <= 400,]
+data<- data[data$total_minutes > 0,]
+outlierTest(lm(total_minutes ~ Year, data = data))
+data <- data[-c(16950,18062	,18102,7814,19945,5981,7114,13986,11753,10998),]
+
+### Properly handle boths
+# Store a copy of data with both col and data without boths
+data_with_boths <- data 
+data_without_both_cols <- subset(data, genre != "Both") 
+boths <- subset(data, genre == "Both")
+data <- subset(data, genre != "Both")
+
+for(i in 1:nrow(boths)) {
+  boths[i,]$genre <- "Drama"
+  new_row <- boths[i,]
+  new_row$genre <- "Action" 
+  
+  boths <- rbind(boths, new_row)
+}
+
+data <- rbind(data, boths)
+# data <- data_without_both_cols
+
+###Taking yearly averages
+averages <- tapply(data$total_minutes, list(data$genre, data$Year), mean)
+averages_df <- as.data.frame(t(as.matrix(averages)))
+averages_df["Year"] <- seq(1960,2024)
+averages_yearly <- pivot_longer(averages_df, cols = c("Action","Drama"))
+colnames(averages_yearly) <- c("Year", "Genre", "Yearly_Averages")
+
+averages_yearly <- averages_yearly[-c(121),]
+```
+
+We used the full IMDB dataset spanning from 1960 to 2024 and cleaned it so that it only contained the relevant variables: Year, Duration (minutes), and Genre. For genre, only the relevant genres (drama or action) were kept. To account for movies that fell into both of these categories we duplicated them and put one entry in Drama and the other in Action. These genres were chosen for their popularity, giving a large sample size even with the overlap between genres. On the cleaned dataset, we cleared any entries missing values or movies with duration's equal to zero. Several outliers were immediately noticed in the form of movies that were unusually long (24+ hrs). These were subsequently removed from the dataset. After cleaning individual outlier cases, the yearly average duration for each genre was taken .
+
+## **4.2 Exploratory Data Analysis (EDA)**
+
+Initially, we were curious as to how the duration of each genre may have varied over time. To view the change over time in a simple format, we used a double scatterplot to show how the two genres' average lengths changed against each other. As can be seen below, action movies appear to have a sharp increase in average length over time, while drama movies had a much softer increase. From the summary statistics we learn that all predictors as well as their interactions are significant at a 0.001 significance level and the overall model has a p-value of 2.2e-16 and an F-statistic of 117.5 on 3 and 125 df. This suggests much of the error seen in the model is explained by the regression model. Furthermore, the adjusted r-squared is 0.73 which also supports the assertion that much of the variation is explained by the residuals.
+
+```{r, echo=FALSE, fig.align = 'center',message = FALSE, warning = FALSE, fig.width = 6,fig.height = 3 }
+ggplot(averages_yearly, aes(x = Year, y = Yearly_Averages, color = Genre)) +
+  geom_point(size = 2) +
+  labs(
+    title = "Yearly Average Lengths of Action and Drama Movies over Time",
+    x = "Year", y = "Average Length of Movie"
+  )
+```
+
+```{r, echo =FALSE, include = FALSE}
+linear_model <- lm(Yearly_Averages~ Year*Genre, data = averages_yearly)
+
+boxcox_result<-boxcox(linear_model)
+  
+max_lambda <- boxcox_result$x[which.max(boxcox_result$y)]
+max_lambda
+
+boxcox_model <- lm((Yearly_Averages^(-0.1818182)-1)/(-0.1818182)~ Year*Genre, data = averages_yearly)
+
+summary(linear_model)
+```
+
+## 4.3 Regression Model
+
+:::{style="text-align: center"}
+$Duration_{i\lambda} = -517.9224 + 0.3141\times{Year}  + 341.9127\times GenreDrama \\ -0.1718\times Year:GenreDrama + \epsilon_i$ 
+:::
+
+To adjust for the effect of Year on Genre, we included the interaction between these predictors in our linear model, and because the interaction was significant at a 0.01 level (p = 2.64e-11 \< 0.01). Hypothesis testing found all predictors (Year, Genre) to be significant in predicting the average duration of a genre (p \< 0.01). Action is the reference genre, and based on the regression it appears that the genre Drama starts off with a higher average length, but sees a slower growth rate in duration than Action. This is reflected in a graph of our model.
+
+```{r, echo = FALSE, fig.align = 'center' ,message = FALSE, warning = FALSE, fig.width = 6,fig.height = 3 }
+ggplot(averages_yearly, aes(x = Year, y = Yearly_Averages, color = Genre)) + geom_smooth(method = "lm")+
+  geom_point(size = 2) +
+  labs(
+    title = "Yearly Average Lengths of Action and Drama Movies over Time",
+    x = "Year", y = "Average Length of Movie"
+  )
+```
+
+No transformation was applied in the end as they did not significantly improve the model, and just decreased the interpretability of the results.
+
+The regression model has four coefficients:
+
+1)  $Intercept$ (-517.9224) is a negative and somewhat nonsensical value since there is no year zero.
+
+2)  $Year$ (0.3141) the yearly increase in movie duration for Action movies.
+
+3)  $GenreDrama$ (341.9127) is a dummy variable that adjusts the intercept if the genre of the movie is drama. It indicates that Drama movies started off as having a higher average duration than Action movies.
+
+4)  $Year:GenreDrama$ (-0.1718) adjusts for the interaction between Drama movies and year.
+
+### 4.3.1 Assumptions
+
+```{r, fig.width=10, fig.height=6, echo=FALSE, message=FALSE, warning=FALSE}
+par(mfrow = c(2, 2), mar = c(2, 2, 1, 1))  # Reduce margins
+plot(linear_model)
+```
+
+1)  Heteroscedasticity: A plot of the residuals vs predicted revealed random scatter about the line, suggesting homoscedasticity of the residuals. A Breusch-Pagan test reveals there is not enough evidence at a 0.01 significance level (0.03468 \> .01) to say the variance is non-constant (heteroscedastic).
+
+```{r, echo = FALSE, include = FALSE}
+bptest(linear_model)
+```
+
+2)  Normality: The normality assumption for the linear regression is met and we fail to reject the null hypothesis for the Anderson-Darling normality test (p = 0.7512 \> 0.05). There is evidence to suggest the residuals of the regression model do follow an approximate normal distribution. Examining the Q-Q plot, we see points roughly fall along the line which supports the normality assumption.
+
+```{r,  echo = FALSE, include = FALSE}
+ad.test(residuals(linear_model))
+```
+
+3)  Independence: For autocorrelation, the p-value is not significant at a 0.001 significance level. The DW value is 1.4831, which is closer to two than zero or four. This suggests that while it is a positive autocorrelation, it is still relatively low and we still believe the model to be acceptable.
+
+```{r, echo = FALSE, include = FALSE}
+#How do we want to handle autocorrelation?
+dwtest(linear_model) #autocorrelation test
+```
+
+3)  Linearity: Hypothesis testing revealed all predictors included in the model to be significant at a 0.05 significance level. This is supported by the scale-location plot, which has a relatively straight line and evenly distributed points.
+
+## 4.4 Recommendations
+
+The sample sizes of our two genres, despite both being popular shows a huge disparity in size. Action has a much smaller sample than Drama. This can cause unequal statistical power, and weakens the significance of the results. Furthermore, the scope of our study is limited. We only chose two genres for our analysis due to the high overlap between genres. Initially, we wanted to look at many genres, however, IMDB places movies in multiple categories such that it is extremely rare to find a movie that is in a singular category. We decided to only use two genres to minimize overlap while still providing large samples to draw from. Action and Drama were chosen for their popularity, and because they were two of the largest genres available.
+
+### Conclusion
+
+Our hypothesis was that over time we would see an increase in movie length, and that we expected drama's to be longer on average than action movies. Based on the regression model, this hypothesis is supported. Looking further, our Regression model shows that in the 1990s action movies outpaced dramas in average length. We  hypothesize that this may be due to the success of longer-form (2+ hours) action movies such as the Matrix or Jurrasic World franchises, leading to other studios trying to replicate this success with similar films. A closer analysis of the IMDB data and perhaps a cultural analysis could help to explain the shifts we see in the data.

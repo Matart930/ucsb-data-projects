@@ -1,0 +1,707 @@
+"Title","Year","total_minutes","Rating","Votes","budget","grossWorldWide","opening_weekend_Gross","genres","countries_origin","nominations"
+"The Dark Knight",2008,152,9,3e+06,1.85e+08,1009053678,158411483,"['Action Epic', 'Epic', 'Superhero', 'Action', 'Crime', 'Drama', 'Thriller']","['United States', 'United Kingdom']",164
+"Iron Man",2008,126,7.9,1200000,1.4e+08,585796247,98618668,"['Sci-Fi Epic', 'Superhero', 'Action', 'Adventure', 'Sci-Fi']","['United States', 'Canada']",73
+"Indiana Jones and the Kingdom of the Crystal Skull",2008,122,6.2,499000,1.85e+08,786636033,100137835,"['Adventure Epic', 'Globetrotting Adventure', 'Action', 'Adventure']","['United States']",42
+"Hancock",2008,92,6.4,523000,1.5e+08,629443428,62603879,"['Superhero', 'Action', 'Comedy', 'Drama', 'Fantasy']","['United States']",14
+"WALL·E",2008,98,8.4,1200000,1.8e+08,527403656,63087526,"['Adventure Epic', 'Artificial Intelligence', 'Computer Animation', 'Dystopian Sci-Fi', 'Space Sci-Fi', 'Adventure', 'Animation', 'Family', 'Sci-Fi']","['United States', 'Japan']",95
+"Kung Fu Panda",2008,92,7.6,541000,1.3e+08,632091832,60239130,"['Animal Adventure', 'Computer Animation', 'Kung Fu', 'Martial Arts', 'Wuxia', 'Action', 'Adventure', 'Animation', 'Comedy', 'Family']","['United States']",39
+"Twilight",2008,122,5.3,499000,3.7e+07,408497161,69637740,"['Dark Fantasy', 'Teen Drama', 'Teen Fantasy', 'Teen Romance', 'Drama', 'Fantasy', 'Romance']","['United States', 'United Kingdom']",16
+"Madagascar: Escape 2 Africa",2008,89,6.6,255000,1.5e+08,603900354,63106589,"['Animal Adventure', 'Computer Animation', 'Slapstick', 'Adventure', 'Animation', 'Comedy', 'Family']","['United States', 'United Kingdom']",11
+"Quantum of Solace",2008,106,6.5,479000,2e+08,589593688,67528882,"['Spy', 'Action', 'Adventure', 'Mystery', 'Thriller']","['United Kingdom', 'United States', 'Italy']",32
+"Horton Hears a Who!",2008,86,6.8,153000,8.5e+07,298572799,45012998,"['Computer Animation', 'Jungle Adventure', 'Adventure', 'Animation', 'Comedy', 'Drama', 'Family', 'Fantasy', 'Music']","['United States', 'United Kingdom']",18
+"Sex and the City",2008,145,5.7,129000,6.5e+07,418769972,57038404,"['Romantic Comedy', 'Comedy', 'Drama', 'Romance']","['United States']",12
+"Gran Torino",2008,116,8.1,830000,3.3e+07,269958228,271720,"['Drama']","['Germany', 'United States']",22
+"Taken",2008,90,7.7,648000,2.5e+07,226837760,24717037,"['One-Person Army Action', 'Action', 'Crime', 'Thriller']","['France', 'United Kingdom', 'United States']",2
+"Mamma Mia!",2008,108,6.5,285000,5.2e+07,611452132,27751240,"['Feel-Good Romance', 'Jukebox Musical', 'Pop Musical', 'Romantic Comedy', 'Comedy', 'Musical', 'Romance']","['United States', 'United Kingdom', 'Germany']",27
+"Marley & Me",2008,115,7,171000,6e+07,255743968,36357586,"['Animal Adventure', 'Drama', 'Family']","['United States']",4
+"The Chronicles of Narnia: Prince Caspian",2008,150,6.5,230000,2.25e+08,419665568,55034805,"['Adventure Epic', 'Fantasy Epic', 'Action', 'Adventure', 'Family', 'Fantasy']","['United States', 'Poland', 'Slovenia', 'Czech Republic', 'United Kingdom', 'Australia', 'Germany', 'Guatemala', 'New Zealand']",21
+"Slumdog Millionaire",2008,120,8,889000,1.5e+07,378411362,360018,"['Coming-of-Age', 'Teen Drama', 'Crime', 'Drama', 'Romance']","['United Kingdom', 'France', 'United States', 'India']",133
+"The Incredible Hulk",2008,112,6.6,536000,1.5e+08,264770996,55414050,"['Kaiju', 'One-Person Army Action', 'Superhero', 'Urban Adventure', 'Action', 'Adventure', 'Sci-Fi']","['United States', 'Canada', 'Japan']",10
+"Wanted",2008,110,6.7,416000,7.5e+07,342463063,50927085,"['Gun Fu', 'Superhero', 'Action', 'Crime', 'Thriller']","['United States', 'Germany', 'Russia']",25
+"Get Smart",2008,110,6.5,232000,8e+07,230685453,38683480,"['Dark Comedy', 'Parody', 'Satire', 'Action', 'Adventure', 'Comedy']","['United States']",6
+"The Curious Case of Benjamin Button",2008,166,7.8,712000,1.5e+08,335802786,26853816,"['Epic', 'Period Drama', 'Romantic Epic', 'Drama', 'Fantasy', 'Romance']","['United States']",160
+"Four Christmases",2008,88,5.7,84000,8e+07,164112721,31069826,"['Holiday Comedy', 'Holiday Romance', 'Comedy', 'Drama', 'Holiday', 'Romance']","['Germany', 'United States']",0
+"Bolt",2008,96,6.8,236000,1.5e+08,309979994,26223128,"['Animal Adventure', 'Computer Animation', 'Urban Adventure', 'Adventure', 'Animation', 'Comedy', 'Crime', 'Drama', 'Family', 'Sci-Fi']","['United States', 'Japan']",32
+"Tropic Thunder",2008,107,7.1,461000,9.2e+07,195703351,25812796,"['High-Concept Comedy', 'Jungle Adventure', 'Parody', 'Satire', 'Action', 'Comedy', 'War']","['United States', 'United Kingdom', 'Germany']",47
+"Bedtime Stories",2008,99,6,103000,8e+07,212874864,27450296,"['Fairy Tale', 'Adventure', 'Comedy', 'Family', 'Fantasy', 'Romance', 'Sci-Fi']","['United States', 'United Kingdom', 'Australia']",5
+"The Mummy: Tomb of the Dragon Emperor",2008,112,5.2,174000,1.45e+08,403449830,40457770,"['Martial Arts', 'Action', 'Adventure', 'Fantasy', 'Horror']","['United States', 'Germany', 'China', 'Canada', 'United Kingdom', 'Hong Kong']",6
+"Journey to the Center of the Earth",2008,93,5.8,135000,6e+07,244232688,21018141,"['Dinosaur Adventure', 'Quest', 'Action', 'Adventure', 'Family', 'Fantasy', 'Sci-Fi']","['United States']",4
+"Eagle Eye",2008,118,6.6,197000,8e+07,178767383,29150721,"['Cyber Thriller', 'Action', 'Mystery', 'Thriller']","['Germany', 'United States']",8
+"Step Brothers",2008,98,6.9,327000,6.5e+07,128110667,30940732,"['Buddy Comedy', 'Comedy']","['United States']",2
+"You Don't Mess with the Zohan",2008,113,5.6,219000,9e+07,204313400,38531374,"['Slapstick', 'Action', 'Comedy']","['United States']",2
+"Yes Man",2008,104,6.8,390000,7e+07,223241637,18262471,"['Feel-Good Romance', 'High-Concept Comedy', 'Quirky Comedy', 'Romantic Comedy', 'Satire', 'Comedy', 'Romance']","['United States', 'United Kingdom']",9
+"10,000 BC",2008,109,5.1,137000,1.05e+08,269784201,35867488,"['Dinosaur Adventure', 'Action', 'Adventure', 'Drama', 'Fantasy', 'History']","['United States', 'South Africa', 'New Zealand', 'Germany']",0
+"Beverly Hills Chihuahua",2008,91,3.9,26000,2e+07,149292488,29300465,"['Animal Adventure', 'Adventure', 'Comedy', 'Drama', 'Family', 'Romance']","['United States', 'Mexico']",6
+"High School Musical 3: Senior Year",2008,112,5,69000,1.1e+07,252909177,42030184,"['Teen Romance', 'Comedy', 'Drama', 'Family', 'Music', 'Musical', 'Romance']","['United States']",9
+"Pineapple Express",2008,111,6.9,363000,2.7e+07,101624843,23245025,"['Stoner Comedy', 'Action', 'Comedy', 'Crime']","['United States']",15
+"Valkyrie",2008,121,7.1,264000,7.5e+07,201545517,21027007,"['Period Drama', 'Political Thriller', 'Drama', 'History', 'Thriller', 'War']","['United Kingdom', 'France', 'Germany', 'Italy', 'Spain', 'Japan', 'United States']",11
+"21",2008,123,6.8,271000,3.5e+07,159808370,24105943,"['True Crime', 'Crime', 'Drama', 'Thriller']","['United States']",5
+"What Happens in Vegas",2008,99,6.1,191000,3.5e+07,219375562,20172474,"['Feel-Good Romance', 'Romantic Comedy', 'Comedy', 'Romance']","['United States']",3
+"Jumper",2008,88,6.1,329000,8.5e+07,225132113,27354808,"['Globetrotting Adventure', 'Superhero', 'Action', 'Adventure', 'Sci-Fi', 'Thriller']","['Canada', 'United States']",5
+"Cloverfield",2008,85,7,430000,2.5e+07,172394180,40058229,"['Disaster', 'Found Footage Horror', 'Kaiju', 'Monster Horror', 'Supernatural Horror', 'Action', 'Horror', 'Sci-Fi', 'Thriller']","['United States']",34
+"The Day the Earth Stood Still",2008,104,5.5,181000,8e+07,233093859,30480153,"['Alien Invasion', 'Adventure', 'Drama', 'Sci-Fi', 'Thriller']","['United States', 'Canada']",5
+"27 Dresses",2008,111,6.1,179000,3e+07,162655351,23007725,"['Feel-Good Romance', 'Romantic Comedy', 'Comedy', 'Romance']","['United States']",3
+"Hellboy II: The Golden Army",2008,120,7,291000,8.5e+07,168319243,34539115,"['Steampunk', 'Superhero', 'Action', 'Adventure', 'Fantasy', 'Horror', 'Sci-Fi']","['United States', 'Germany', 'Hungary']",35
+"Vantage Point",2008,90,6.6,155000,4e+07,152039882,22874936,"['Political Thriller', 'Action', 'Drama', 'Thriller']","['United States', 'Mexico', 'Spain']",2
+"The Spiderwick Chronicles",2008,96,6.5,105000,9e+07,164170327,19004058,"['Action', 'Adventure', 'Drama', 'Family', 'Fantasy', 'Thriller']","['United States', 'Canada']",8
+"Fool's Gold",2008,112,5.7,86000,7e+07,111231041,21589295,"['Romantic Comedy', 'Action', 'Adventure', 'Comedy', 'Romance', 'Thriller']","['United States']",0
+"Seven Pounds",2008,123,7.6,319000,5.5e+07,169748929,14851136,"['Tragedy', 'Drama', 'Mystery', 'Thriller']","['United States']",7
+"Role Models",2008,99,6.8,244000,2.8e+07,92649419,19167085,"['Buddy Comedy', 'Comedy']","['United States', 'Germany']",4
+"Hannah Montana and Miley Cyrus: Best of Both Worlds Concert",2008,74,2.7,12000,7e+06,70642966,31117834,"['Concert', 'Documentary', 'Music']","['United States']",0
+"The Happening",2008,91,5,221000,4.8e+07,163404284,30517109,"['Adventure', 'Drama', 'Sci-Fi', 'Thriller']","['United States', 'India']",10
+"Forgetting Sarah Marshall",2008,111,7.1,308000,3e+07,105833257,17725330,"['Feel-Good Romance', 'Romantic Comedy', 'Comedy', 'Drama', 'Romance']","['United States']",19
+"Baby Mama",2008,99,6,48000,3e+07,64444713,17407110,"['Comedy', 'Romance']","['United States']",5
+"Burn After Reading",2008,96,7,361000,3.7e+07,163728902,19128001,"['Dark Comedy', 'Farce', 'Satire', 'Comedy', 'Crime', 'Drama', 'Thriller']","['United States', 'United Kingdom', 'France']",32
+"Step Up 2: The Streets",2008,98,6.2,92000,17500000,150988382,18908826,"['Drama', 'Music', 'Romance']","['United States']",3
+"Saw V",2008,92,5.8,142000,10800000,113864059,30053954,"['Splatter Horror', 'Horror', 'Thriller']","['United States', 'Canada']",2
+"The Strangers",2008,86,6.1,150000,9e+06,82410456,20997985,"['Horror', 'Mystery', 'Thriller']","['United States']",15
+"The Forbidden Kingdom",2008,104,6.5,111000,5.5e+07,128792411,21401121,"['Kung Fu', 'Martial Arts', 'Wuxia', 'Action', 'Adventure', 'Fantasy']","['United States', 'China', 'Hong Kong']",0
+"The Tale of Despereaux",2008,93,6.1,41000,6e+07,86957280,10103675,"['Animal Adventure', 'Computer Animation', 'Parody', 'Adventure', 'Animation', 'Comedy', 'Family', 'Fantasy']","['United Kingdom', 'United States']",8
+"Australia",2008,165,6.6,131000,1.3e+08,211788761,14800723,"['Adventure Epic', 'Epic', 'Period Drama', 'Romantic Epic', 'War Epic', 'Western Epic', 'Adventure', 'Drama', 'Romance', 'War']","['United Kingdom', 'Australia', 'United States']",37
+"The House Bunny",2008,97,5.5,92000,2.5e+07,70439696,14533702,"['Teen Comedy', 'Comedy']","['United States']",0
+"Nim's Island",2008,96,6,37000,3.7e+07,100104565,13210579,"['Adventure', 'Family', 'Fantasy']","['United States']",3
+"Made of Honor",2008,101,5.8,77000,4e+07,106407672,14756850,"['Romantic Comedy', 'Slapstick', 'Comedy', 'Romance']","['United States', 'United Kingdom']",0
+"The Sisterhood of the Traveling Pants 2",2008,119,6.2,31000,2.7e+07,44352417,10678430,"['Comedy', 'Drama', 'Romance']","['United States']",0
+"Speed Racer",2008,135,6.1,80000,1.2e+08,93945766,18561337,"['Car Action', 'Motorsport', 'Action', 'Adventure', 'Comedy', 'Drama', 'Family', 'Sci-Fi', 'Sport']","['United States', 'United Kingdom', 'Germany', 'Japan']",12
+"Prom Night",2008,88,3.9,39000,2e+07,57197876,20804941,"['Slasher Horror', 'Teen Horror', 'Horror']","['Canada', 'United States']",4
+"Rambo",2008,92,7,249000,5e+07,113244290,18203876,"['Jungle Adventure', 'One-Person Army Action', 'Tragedy', 'Action', 'Thriller']","['Germany', 'United States']",0
+"Welcome Home, Roscoe Jenkins",2008,114,5.5,16000,3.5e+07,43655418,16207730,"['Comedy', 'Romance']","['United States']",0
+"Nights in Rodanthe",2008,97,6,27000,3e+07,84375346,13418454,"['Drama', 'Romance']","['United States', 'Australia']",0
+"Max Payne",2008,100,5.3,131000,3.5e+07,87066930,17639849,"['Action', 'Crime', 'Drama', 'Mystery', 'Thriller']","['United States', 'Canada']",0
+"Righteous Kill",2008,101,6,93000,6e+07,79498846,16288361,"['Crime', 'Mystery', 'Thriller']","['United States']",2
+"Body of Lies",2008,128,7,243000,7e+07,115900897,12884416,"['Conspiracy Thriller', 'Political Thriller', 'Spy', 'Action', 'Drama', 'Thriller']","['United States', 'United Kingdom']",0
+"Lakeview Terrace",2008,110,6.2,57000,2e+07,44655002,15004672,"['Crime', 'Drama', 'Thriller']","['United States']",0
+"Meet the Spartans",2008,87,2.8,113000,3e+07,85897593,18505530,"['Parody', 'Slapstick', 'Comedy', 'Fantasy']","['United States']",0
+"Harold & Kumar Escape from Guantanamo Bay",2008,114,6.5,143000,1.2e+07,43495888,14908404,"['Farce', 'Stoner Comedy', 'Adventure', 'Comedy']","['United States']",0
+"The Secret Life of Bees",2008,114,7.2,28000,1.1e+07,39952437,10527799,"['Drama']","['United States']",17
+"Death Race",2008,105,6.4,222000,4.5e+07,76014335,12621090,"['Action', 'Sci-Fi', 'Thriller']","['United States', 'Germany', 'United Kingdom']",5
+"Changeling",2008,141,7.7,269000,5.5e+07,113398237,489015,"['Docudrama', 'Period Drama', 'True Crime', 'Biography', 'Crime', 'Drama', 'History', 'Mystery', 'Thriller']","['United States']",55
+"Star Wars: The Clone Wars",2008,98,5.9,75000,8500000,68282844,14611273,"['Computer Animation', 'Space Sci-Fi', 'Action', 'Adventure', 'Animation', 'Family', 'Fantasy', 'Sci-Fi']","['United States', 'Singapore', 'Australia', 'United Kingdom', 'Czech Republic']",0
+"The Reader",2008,124,7.6,266000,3.2e+07,108902486,168051,"['Steamy Romance', 'Drama', 'Mystery', 'Romance']","['Germany', 'United States']",48
+"Semi-Pro",2008,91,5.8,87000,5.5e+07,44004502,15200000,"['Basketball', 'Comedy', 'Sport']","['United States']",4
+"Fireproof",2008,122,6.4,25000,5e+05,33473297,6836036,"['Drama', 'Romance']","['United States']",0
+"Doubt",2008,104,7.5,139000,2e+07,51699984,507226,"['Legal Drama', 'Psychological Drama', 'Drama', 'Mystery']","['United States']",97
+"Drillbit Taylor",2008,110,5.7,63000,4e+07,49944325,10309986,"['Teen Comedy', 'Action', 'Comedy', 'Crime']","['United States']",2
+"The Love Guru",2008,87,3.8,56000,6.2e+07,40877556,13907130,"['Slapstick', 'Comedy', 'Romance', 'Sport']","['United Kingdom', 'Germany', 'United States']",8
+"Milk",2008,128,7.5,182000,2e+07,54662930,1453844,"['Docudrama', 'Period Drama', 'Political Drama', 'Biography', 'Drama', 'History']","['United States']",145
+"Transporter 3",2008,104,6.1,180000,3e+07,108979549,12063452,"['Action', 'Thriller']","['France', 'United States', 'United Kingdom', 'Ukraine']",0
+"Quarantine",2008,89,6,79000,1.2e+07,41319906,14211321,"['Found Footage Horror', 'Zombie Horror', 'Horror', 'Sci-Fi', 'Thriller']","['United States', 'Spain']",0
+"Nick and Norah's Infinite Playlist",2008,90,6.6,96000,1e+07,33556631,11311751,"['Romantic Comedy', 'Teen Comedy', 'Teen Drama', 'Teen Romance', 'Comedy', 'Drama', 'Music', 'Romance']","['United States']",9
+"Zack and Miri Make a Porno",2008,101,6.5,184000,2.4e+07,42784344,10065630,"['Raunchy Comedy', 'Comedy', 'Romance']","['United States']",4
+"The Eye",2008,98,5.4,57000,1.2e+07,58010320,12425776,"['Horror', 'Mystery']","['Canada', 'United States']",4
+"Leatherheads",2008,114,6,34000,5.8e+07,41319039,12682595,"['Slapstick', 'Comedy', 'Drama', 'Romance', 'Sport']","['United States', 'Germany']",3
+"Mirrors",2008,110,6.1,116000,3.5e+07,78094714,11161074,"['Supernatural Horror', 'Horror', 'Mystery']","['United States', 'Romania', 'Germany', 'France']",0
+"Space Chimps",2008,81,4.5,13000,3.7e+07,65097693,7181374,"['Animal Adventure', 'Computer Animation', 'Space Sci-Fi', 'Adventure', 'Animation', 'Comedy', 'Family', 'Sci-Fi']","['United States', 'Canada', 'United Kingdom', 'Australia']",0
+"The Bank Job",2008,111,7.2,192000,2e+07,64828421,5935256,"['Caper', 'Heist', 'Period Drama', 'True Crime', 'Crime', 'Thriller']","['United Kingdom', 'United States', 'Australia']",0
+"Untraceable",2008,101,6.2,54000,3.5e+07,52933513,11354069,"['Serial Killer', 'Crime', 'Mystery', 'Thriller']","['United States']",0
+"Defiance",2008,137,7.1,158000,3.2e+07,51262751,123513,"['Period Drama', 'Action', 'Drama', 'History', 'Thriller', 'War']","['United States']",5
+"The Women",2008,114,5,24000,1.6e+07,50007546,10115210,"['Comedy', 'Drama']","['United States']",4
+"One Missed Call",2008,87,4,35000,2e+07,45847751,12511473,"['Supernatural Horror', 'Horror', 'Mystery']","['United States', 'Japan', 'Germany', 'United Kingdom']",0
+"The Other Boleyn Girl",2008,115,6.7,122000,3.5e+07,78201830,8203061,"['Costume Drama', 'Period Drama', 'Biography', 'Drama', 'History', 'Romance']","['United Kingdom', 'United States']",0
+"Street Kings",2008,109,6.8,123000,2e+07,66476363,12469631,"['Action', 'Crime', 'Thriller']","['United States']",0
+"The Wrestler",2008,109,7.9,324000,6e+06,44734660,202714,"['Psychological Drama', 'Tragedy', 'Drama', 'Sport']","['United States', 'France']",93
+"Shutter",2008,85,5.2,38000,8e+06,48555306,10447559,"['Supernatural Horror', 'Horror', 'Mystery', 'Thriller']","['Thailand', 'Japan', 'United States']",0
+"Superhero Movie",2008,75,4.7,78000,3.5e+07,71571300,9510297,"['Parody', 'Slapstick', 'Superhero', 'Action', 'Comedy', 'Sci-Fi']","['United States']",0
+"W.",2008,129,6.3,51000,25100000,29560587,10505668,"['Dark Comedy', 'Docudrama', 'Political Drama', 'Satire', 'Biography', 'Comedy', 'Drama', 'History']","['United States', 'Australia', 'Hong Kong', 'Switzerland', 'China']",8
+"Never Back Down",2008,113,6.5,108000,2e+07,41627431,8603195,"['Martial Arts', 'Action', 'Drama', 'Sport']","['United States']",0
+"Traitor",2008,114,6.9,60000,2.2e+07,27675014,7868465,"['Conspiracy Thriller', 'Action', 'Crime', 'Drama', 'Thriller']","['United States']",0
+"Vicky Cristina Barcelona",2008,96,7.1,273000,15500000,96409830,3755575,"['Steamy Romance', 'Comedy', 'Drama', 'Romance']","['Spain', 'United States']",54
+"Revolutionary Road",2008,119,7.3,229000,3.5e+07,75981180,189911,"['Period Drama', 'Drama', 'Romance']","['United Kingdom', 'United States']",73
+"Babylon A.D.",2008,90,5.5,99000,7e+07,72109200,9484627,"['Cyberpunk', 'Action', 'Adventure', 'Sci-Fi', 'Thriller']","['United Kingdom', 'France', 'United States', 'Czech Republic']",0
+"The X Files: I Want to Believe",2008,104,5.9,95000,3e+07,69363381,10021753,"['Crime', 'Drama', 'Horror', 'Mystery', 'Sci-Fi', 'Thriller']","['United States', 'Canada']",0
+"Mad Money",2008,104,5.9,23000,2.2e+07,26412163,7736452,"['Caper', 'Satire', 'Comedy', 'Crime', 'Thriller']","['United States']",0
+"Appaloosa",2008,115,6.7,66000,2e+07,27712362,248847,"['Crime', 'Drama', 'Romance', 'Western']","['United States']",0
+"The Spirit",2008,103,4.7,63000,6e+07,39164441,6463278,"['Superhero', 'Action', 'Crime', 'Fantasy', 'Thriller']","['United States']",0
+"Igor",2008,87,5.9,25000,2.5e+07,30893885,7803347,"['Computer Animation', 'Slapstick', 'Steampunk', 'Animation', 'Comedy', 'Family', 'Fantasy', 'Horror', 'Sci-Fi']","['France', 'United States']",0
+"Oceans",2008,84,7.7,10000,8e+07,83090556,6058958,"['Nature Documentary', 'Documentary']","['Switzerland', 'France', 'Spain', 'Monaco', 'United Arab Emirates', 'United States']",4
+"My Best Friend's Girl",2008,101,5.8,47000,2e+07,41624687,8265357,"['Comedy', 'Romance']","['United States']",0
+"Frost/Nixon",2008,122,7.6,114000,2.5e+07,27426335,180708,"['Docudrama', 'Political Drama', 'Biography', 'Drama', 'History']","['United Kingdom', 'France', 'United States']",81
+"Kit Kittredge: An American Girl",2008,101,6.5,6400,1e+07,17657973,220297,"['Comedy', 'Drama', 'Family']","['United States', 'Canada']",5
+"The Ruins",2008,90,5.9,87000,8e+06,22818256,8003421,"['Body Horror', 'Adventure', 'Horror', 'Thriller']","['United States', 'Germany', 'Australia']",0
+"Inkheart",2008,106,6.1,83000,6e+07,62803180,7601379,"['Globetrotting Adventure', 'Supernatural Fantasy', 'Teen Fantasy', 'Adventure', 'Family', 'Fantasy']","['Germany', 'United Kingdom', 'United States', 'Italy']",0
+"The Hurt Locker",2008,131,7.5,481000,1.5e+07,49259766,145352,"['Drama', 'Thriller', 'War']","['United States', 'Luxembourg']",130
+"Swing Vote",2008,120,6.1,20000,2.1e+07,17635397,6230669,"['Political Drama', 'Satire', 'Comedy', 'Drama']","['United States']",0
+"Pride and Glory",2008,130,6.6,64000,3e+07,31200557,6262396,"['Serial Killer', 'Crime', 'Drama', 'Thriller']","['United States', 'Germany']",0
+"Bangkok Dangerous",2008,99,5.3,59000,4.5e+07,42487390,7783266,"['Action', 'Crime', 'Thriller']","['United States', 'Czech Republic', 'Thailand']",0
+"Disaster Movie",2008,87,1.9,96000,2e+07,34816824,5836973,"['Disaster', 'Parody', 'Raunchy Comedy', 'Superhero', 'Comedy', 'Sci-Fi']","['United States']",6
+"The Duchess",2008,110,6.9,88000,13500000,43343384,190426,"['Costume Drama', 'Period Drama', 'Biography', 'Drama', 'History', 'Romance', 'Thriller']","['United Kingdom', 'Italy', 'France', 'United States']",21
+"The Haunting of Molly Hartley",2008,85,3.9,10000,5e+06,15418749,5423315,"['B-Horror', 'Coming-of-Age', 'Supernatural Horror', 'Teen Drama', 'Teen Horror', 'Drama', 'Horror', 'Thriller']","['United States']",0
+"Ghost Town",2008,102,6.7,79000,2e+07,27090159,5012315,"['Comedy', 'Drama', 'Fantasy', 'Romance']","['United States']",2
+"Religulous",2008,101,7.6,61000,2500000,13639115,3409643,"['Faith & Spirituality Documentary', 'Satire', 'Comedy', 'Documentary', 'War']","['United States']",0
+"The Pirates Who Don't Do Anything",2008,85,5.6,3200,1.5e+07,13247725,4251320,"['Swashbuckler', 'Adventure', 'Animation', 'Comedy', 'Family', 'Fantasy']","['United States', 'Canada']",0
+"Sunshine Cleaning",2008,91,6.8,75000,8e+06,16580250,219190,"['Dark Comedy', 'Comedy', 'Drama']","['United States']",6
+"Meet Dave",2008,90,5.1,44000,6e+07,51339567,5251918,"['Adventure', 'Comedy', 'Family', 'Romance', 'Sci-Fi']","['United States']",3
+"The Longshots",2008,94,5.6,4600,2.3e+07,11767866,4080687,"['Biography', 'Comedy', 'Drama', 'Family', 'Sport']","['United States']",0
+"Be Kind Rewind",2008,102,6.4,95000,2e+07,30579406,4100000,"['Slapstick', 'Comedy']","['United Kingdom', 'France', 'United States']",0
+"Doomsday",2008,105,5.9,81000,3e+07,22472631,4926565,"['Action', 'Sci-Fi', 'Thriller']","['United Kingdom', 'Germany', 'South Africa', 'United States']",0
+"Stop-Loss",2008,112,6.4,21000,2.5e+07,11212953,4555117,"['Drama', 'War']","['United States']",5
+"The Express",2008,130,7.2,23000,4e+07,9808124,4562675,"['Football', 'Biography', 'Drama', 'Sport']","['United States', 'Germany']",3
+"The Boy in the Striped Pajamas",2008,94,7.7,256000,12500000,40416563,253085,"['Period Drama', 'Prison Drama', 'Tragedy', 'Drama', 'War']","['United Kingdom', 'United States']",7
+"Sex Drive",2008,109,6.5,93000,1.9e+07,18755936,3607164,"['Raunchy Comedy', 'Romantic Comedy', 'Teen Comedy', 'Comedy', 'Romance']","['United States']",0
+"Cadillac Records",2008,109,7,24000,1.2e+07,8883644,3445559,"['Biography', 'Drama', 'Music']","['United States']",22
+"Punisher: War Zone",2008,103,5.9,68000,3.5e+07,10161493,4271451,"['Superhero', 'Action', 'Crime', 'Drama', 'Thriller']","['United States', 'Canada', 'Germany']",0
+"Miracle at St. Anna",2008,160,6.1,19000,4.5e+07,9333654,3477996,"['Action', 'Drama', 'War']","['Italy', 'United States']",10
+"City of Ember",2008,90,6.4,71000,5.5e+07,17929684,3129473,"['Dystopian Sci-Fi', 'Steampunk', 'Adventure', 'Drama', 'Family', 'Fantasy', 'Sci-Fi', 'Thriller']","['United States']",0
+"In Bruges",2008,107,7.9,473000,1.5e+07,45211126,459575,"['Dark Comedy', 'Comedy', 'Crime', 'Drama', 'Thriller']","['United Kingdom', 'United States']",55
+"Expelled: No Intelligence Allowed",2008,90,3.7,12000,3500000,7720487,2970848,"['Faith & Spirituality Documentary', 'Nature Documentary', 'Political Documentary', 'Science & Technology Documentary', 'Documentary']","['United States']",0
+"Over Her Dead Body",2008,95,5.3,26000,1e+07,21458111,4600000,"['Comedy', 'Fantasy', 'Romance']","['United States']",0
+"An American Carol",2008,83,4,10000,2e+07,7013191,3810000,"['Farce', 'High-Concept Comedy', 'Parody', 'Satire', 'Slapstick', 'Supernatural Fantasy', 'Comedy', 'Fantasy']","['United States']",0
+"Strange Wilderness",2008,87,5.2,23000,2e+07,6964734,3001719,"['Stoner Comedy', 'Adventure', 'Comedy']","['United States']",0
+"Brideshead Revisited",2008,133,6.6,14000,2e+07,13451186,339616,"['Period Drama', 'Drama', 'Romance']","['United Kingdom', 'Italy', 'Morocco', 'United States']",0
+"The Rocker",2008,102,6.2,41000,1.5e+07,8808935,2636048,"['Comedy', 'Music']","['United States']",0
+"RocknRolla",2008,114,7.2,269000,1.8e+07,25742207,144701,"['Dark Comedy', 'Gangster', 'Action', 'Crime', 'Thriller']","['United Kingdom', 'United States', 'France']",5
+"Hamlet 2",2008,92,6.3,18000,9e+06,4925288,439925,"['Parody', 'Satire', 'Comedy', 'Music']","['United States']",0
+"College",2008,94,4.6,13000,7e+06,6265483,2153109,"['Comedy']","['United States']",0
+"Deception",2008,107,6,41000,2.5e+07,18024545,2312146,"['Erotic Thriller', 'Crime', 'Drama', 'Mystery', 'Thriller']","['United States']",0
+"Flash of Genius",2008,119,7,18000,2e+07,4802953,2251075,"['Biography', 'Drama']","['Canada', 'United States']",0
+"Witless Protection",2008,97,3.4,6600,7500000,4161625,2116692,"['Comedy', 'Crime']","['United States']",0
+"Bottle Shock",2008,110,6.8,18000,5e+06,4629770,278075,"['Comedy', 'Drama']","['United States']",0
+"Elegy",2008,112,6.7,23000,1.3e+07,14894347,104168,"['Psychological Drama', 'Tragic Romance', 'Drama', 'Romance']","['United States']",5
+"The Brothers Bloom",2008,114,6.7,53000,2e+07,5530764,90400,"['Caper', 'Action', 'Adventure', 'Comedy', 'Crime', 'Drama', 'Romance']","['United States']",0
+"Two Lovers",2008,110,7,44000,9800000,16303643,94986,"['Drama', 'Romance']","['France', 'United States']",18
+"Synecdoche, New York",2008,124,7.5,1e+05,2e+07,4659170,172194,"['Dark Comedy', 'Drama']","['United States']",29
+"Man on Wire",2008,94,7.7,59000,1e+06,5258569,51392,"['Biography', 'Crime', 'Documentary', 'History', 'Sport', 'Thriller']","['United Kingdom', 'United States']",13
+"Choke",2008,92,6.4,34000,3e+06,3982459,1319286,"['Dark Comedy', 'Comedy', 'Drama']","['United States']",7
+"Frozen River",2008,97,7.1,27000,1e+06,5457664,70234,"['Crime', 'Drama']","['United States']",39
+"Redbelt",2008,99,6.7,22000,7e+06,2674090,63361,"['Drama', 'Sport']","['United States']",0
+"Waltz with Bashir",2008,90,8,61000,1500000,11179372,50021,"['Adult Animation', 'Computer Animation', 'Docudrama', 'History Documentary', 'Military Documentary', 'Period Drama', 'Psychological Drama', 'Tragedy', 'Animation', 'Biography']","['Israel', 'France', 'Germany', 'United States', 'Finland', 'Switzerland', 'Belgium', 'Australia']",63
+"The Wackness",2008,99,6.9,31000,6e+06,3175469,138401,"['Buddy Comedy', 'Coming-of-Age', 'Stoner Comedy', 'Teen Comedy', 'Teen Drama', 'Teen Romance', 'Comedy', 'Drama', 'Romance']","['United Kingdom', 'United States']",4
+"New York, I Love You",2008,103,6.2,49000,14700000,9961023,380605,"['Romantic Comedy', 'Comedy', 'Drama', 'Romance']","['United States', 'Bahrain']",0
+"The Secrets of Jonathan Sperry",2008,96,6.9,1700,9e+05,1355079,258400,"['Drama', 'Family']","['United States']",0
+"Dostana",2008,145,6.4,17000,5e+06,17779520,645604,"['Comedy', 'Drama', 'Romance']","['India', 'United States']",22
+"Me and Orson Welles",2008,114,6.7,12000,2.5e+07,2336172,63638,"['Comedy', 'Drama']","['United Kingdom', 'Isle of Man', 'United States']",27
+"What Just Happened",2008,104,5.6,29000,2.5e+07,6759057,192508,"['Dark Comedy', 'Parody', 'Satire', 'Showbiz Drama', 'Comedy', 'Drama']","['United States']",0
+"The Children of Huang Shi",2008,125,7,10000,4e+07,7785975,42755,"['Drama', 'War']","['Australia', 'China', 'Germany', 'United States']",3
+"Emma Smith: My Story",2008,98,6.5,376,5e+06,881787,94959,"['Biography', 'Drama', 'History']","['United States']",0
+"Wendy and Lucy",2008,80,7.1,20000,2e+05,1192995,18218,"['Tragedy', 'Drama']","['United States']",16
+"Che: Part One",2008,134,7.1,49000,3.5e+07,34209066,61070,"['Docudrama', 'Political Drama', 'War Epic', 'Biography', 'Drama', 'History', 'War']","['France', 'Spain', 'United States']",13
+"Che: Part Two",2008,135,6.8,36000,4e+07,8638163,61070,"['Docudrama', 'Political Drama', 'War Epic', 'Biography', 'Drama', 'History', 'War']","['Spain', 'France', 'United States', 'Germany']",7
+"Delgo",2008,94,4.3,3200,4e+07,694782,511920,"['Computer Animation', 'Adventure', 'Animation', 'Comedy', 'Family', 'Fantasy', 'Romance']","['United States', 'Canada', 'United Kingdom']",0
+"Red Cliff",2008,148,7.3,49000,553632000,129710514,13104,"['Historical Epic', 'War Epic', 'Wuxia', 'Action', 'Adventure', 'Drama', 'History', 'War']","['China', 'Hong Kong', 'Japan', 'Taiwan', 'South Korea', 'United States']",44
+"War, Inc.",2008,107,5.5,23000,1e+07,1296184,35336,"['Dark Comedy', 'Satire', 'Action', 'Comedy', 'Thriller']","['United States']",0
+"House",2008,88,4.5,6300,2500000,1141018,327445,"['Horror']","['United States']",0
+"Trouble the Water",2008,93,7.3,2100,9e+05,522766,28606,"['Documentary']","['United States']",14
+"The Baader Meinhof Complex",2008,150,7.3,41000,2e+07,26937355,17348,"['True Crime', 'Action', 'Biography', 'Crime', 'Drama', 'History', 'Thriller']","['Germany', 'France', 'Czech Republic', 'Morocco', 'United States']",22
+"Lymelife",2008,95,6.8,15000,1500000,540403,27758,"['Comedy', 'Drama', 'Romance']","['United States']",2
+"The Promotion",2008,86,5.6,20000,8e+06,457690,30493,"['Buddy Comedy', 'Satire', 'Comedy']","['United States']",0
+"The Merry Gentleman",2008,110,6.4,3600,5e+06,347977,74981,"['Crime', 'Drama', 'Thriller']","['United States']",0
+"The Yellow Handkerchief",2008,102,6.7,9000,15500000,318623,37296,"['Road Trip', 'Adventure', 'Drama', 'Romance']","['United States']",0
+"The Informers",2008,98,4.9,18000,1.8e+07,382174,3e+05,"['Crime', 'Drama', 'Thriller']","['United States', 'Germany']",0
+"Passengers",2008,93,5.8,40000,2.5e+07,5798974,172544,"['Mystery', 'Romance', 'Thriller']","['United States', 'Canada']",0
+"The Lucky Ones",2008,115,6.9,15000,1.5e+07,287567,183088,"['Adventure', 'Comedy', 'Drama', 'Romance', 'War']","['United States', 'Bahrain']",0
+"The 13th Alley",2008,81,5.9,78,150000,250992,112946,"['Horror']","['United States']",0
+"Call + Response",2008,86,7.4,75,2e+05,215185,41346,"['Documentary', 'History', 'Music']","['United States']",0
+"The Burning Plain",2008,107,6.7,22000,2e+07,5642478,58749,"['Crime', 'Drama', 'Mystery', 'Romance']","['United States', 'Mexico', 'Argentina']",3
+"Outlander",2008,115,6.2,80000,5e+07,7034698,59581,"['Sword & Sandal', 'Action', 'Adventure', 'Sci-Fi']","['Czech Republic', 'France', 'Germany', 'United States']",0
+"The Other Man",2008,88,5.4,13000,1.5e+07,2143005,51909,"['Drama', 'Mystery', 'Thriller']","['United Kingdom', 'United States']",0
+"Repo! The Genetic Opera",2008,98,6.4,27000,8500000,188126,53684,"['Dark Comedy', 'Rock Musical', 'Steampunk', 'Horror', 'Musical', 'Sci-Fi']","['United States']",0
+"Flow: For Love of Water",2008,84,7.5,1200,350000,142569,3644,"['Documentary']","['United States']",2
+"Lovely, Still",2008,92,7.1,2400,5e+06,282687,4584,"['Drama', 'Romance']","['United States']",0
+"Touching Home",2008,108,5.7,800,2e+06,116353,47382,"['Drama', 'Sport']","['United States']",0
+"Medicine for Melancholy",2008,88,6.6,2700,13000,111551,12625,"['Drama', 'Romance']","['United States']",10
+"Pathology",2008,95,5.9,34000,8e+06,3234706,54244,"['Dark Comedy', 'Psychological Horror', 'Crime', 'Horror', 'Thriller']","['United States']",0
+"Bustin' Down the Door",2008,95,7.1,330,650000,187827,17317,"['Documentary', 'Sport']","['United States']",0
+"Bronson",2008,92,7,144000,230000,2260712,10940,"['Prison Drama', 'True Crime', 'Action', 'Crime', 'Drama']","['United Kingdom', 'Denmark', 'United States', 'Cayman Islands']",7
+"The Midnight Meat Train",2008,100,6,73000,1.5e+07,3534313,34394,"['Slasher Horror', 'Supernatural Horror', 'Horror', 'Mystery', 'Thriller']","['United States', 'United Kingdom']",6
+"Sleep Dealer",2008,90,6,6700,2500000,107559,35050,"['Drama', 'Romance', 'Sci-Fi', 'Thriller']","['Mexico', 'United States']",8
+"Ballast",2008,96,6.9,2400,7e+05,81864,8572,"['Drama']","['United States']",21
+"Fireflies in the Garden",2008,99,6.4,14000,8e+06,6692182,36884,"['Drama']","['United States']",0
+"Disgrace",2008,119,6.5,5900,1e+07,2291680,12615,"['Drama']","['Australia', 'United States', 'Netherlands', 'South Africa']",3
+"Happy Valley",2008,90,6.5,81,250000,67665,27122,"['Documentary']","['United States']",0
+"Allah Made Me Funny: Live in Concert",2008,83,6.3,77,10000,66903,38867,"['Stand-Up', 'Comedy', 'Documentary', 'Family', 'Talk Show']","['United States']",0
+"Julia",2008,144,7,7100,6e+06,1333241,12524,"['Crime', 'Drama', 'Thriller']","['France', 'United States', 'Mexico', 'Belgium']",8
+"Bloodline",2008,113,5.6,407,1500000,68462,6658,"['Mystery']","['United States']",0
+"Deal",2008,86,5.3,4700,5e+06,85076,35281,"['Comedy', 'Drama']","['United States']",0
+"The End of Poverty?",2008,106,7.4,472,1e+06,57805,12593,"['Documentary']","['United States']",0
+"Bart Got a Room",2008,80,5.7,4300,2e+06,53760,32763,"['Comedy', 'Drama', 'Romance']","['United States']",0
+"Trucker",2008,90,6.5,3600,2e+06,52429,9458,"['Drama']","['United States']",0
+"Surfer, Dude",2008,85,4.6,9300,6e+06,52132,5971,"['Comedy']","['United States']",0
+"Box Elder",2008,89,7.3,324,60000,48996,3188,"['Comedy']","['United States']",0
+"The Golden Boys",2008,97,6,615,8e+06,43600,18366,"['Comedy', 'Romance']","['United States']",0
+"Blonde and Blonder",2008,95,2.8,3900,8e+06,779273,26470,"['Comedy', 'Crime']","['Canada', 'United States']",0
+"Familiar Strangers",2008,86,5.6,507,1e+06,34068,11553,"['Comedy', 'Drama']","['United States']",0
+"Fuel",2008,90,7.4,788,2500000,32465,12386,"['Documentary']","['United States']",3
+"Living in Emergency",2008,120,7.9,1100,2e+06,32208,21905,"['Documentary']","['United States']",0
+"Super Capers: The Origins of Ed and the Missing Bullion",2008,98,3.2,1200,2e+06,30955,21559,"['Parody', 'Superhero', 'Action', 'Adventure', 'Comedy', 'Family', 'Fantasy', 'Mystery', 'Romance', 'Sci-Fi']","['United States']",0
+"American Swing",2008,81,6.2,790,5e+05,30156,10174,"['Documentary']","['United States']",0
+"The Alphabet Killer",2008,98,5.2,9100,2e+06,106596,11000,"['True Crime', 'Crime', 'Mystery', 'Thriller']","['United States']",0
+"Explicit Ills",2008,87,5.5,879,1500000,28564,9125,"['Drama', 'Romance']","['United States']",0
+"Surveillance",2008,97,6.3,19000,3500000,1138322,4590,"['Dark Comedy', 'Crime', 'Drama', 'Mystery', 'Thriller']","['Germany', 'Canada', 'United States']",5
+"Ranchero",2008,95,5.1,155,9e+05,24036,3826,"['Crime', 'Drama']","['United States']",0
+"Death in Love",2008,97,4.7,1200,3e+06,23412,14296,"['Drama', 'Romance', 'War']","['United States']",0
+"Downloading Nancy",2008,102,5.7,3100,3e+06,22282,10324,"['Drama', 'Thriller']","['United States']",3
+"Neshoba",2008,86,7.7,99,3e+05,19245,4645,"['Documentary']","['United States']",0
+"Cook County",2008,93,6.7,579,7e+05,17977,7579,"['Drama']","['United States']",0
+"Adventures of Power",2008,89,5.8,2000,2500000,17419,4254,"['Comedy', 'Music']","['United States']",0
+"Dark Streets",2008,83,4.4,430,8e+06,16815,10958,"['Period Drama', 'Psychological Thriller', 'Drama', 'Thriller']","['United States']",0
+"Tennessee",2008,100,5.8,898,4e+06,16100,9438,"['Road Trip', 'Adventure', 'Comedy', 'Drama', 'Romance']","['United States']",0
+"Sherman's Way",2008,97,5.4,572,250000,13282,2789,"['Comedy']","['United States']",0
+"Harold",2008,90,5.4,2000,3500000,13229,10578,"['Comedy']","['United States']",0
+"Lake City",2008,93,5.7,968,4e+06,12767,9355,"['Crime', 'Drama']","['United States']",0
+"August",2008,88,5.3,4400,3400000,12636,8092,"['Drama', 'Financial Drama']","['United States']",0
+"Gardens of the Night",2008,110,6.8,4800,2300000,11436,3072,"['Drama']","['United Kingdom', 'United States']",4
+"Santa Mesa",2008,82,5.9,60,1e+06,10490,3846,"['Drama']","['Philippines', 'United States']",0
+"Fix",2008,93,6,952,5e+05,9890,5951,"['Drama']","['United States']",2
+"Home",2008,84,5.3,209,5e+05,17182,226,"['Drama']","['United States']",0
+"Yonkers Joe",2008,101,6.3,1000,5e+06,8286,2073,"['Comedy', 'Crime', 'Thriller']","['United States']",0
+"I Sell the Dead",2008,85,6,11000,750000,8050,3529,"['Dark Comedy', 'Comedy', 'Horror']","['United States']",5
+"Eleven Minutes",2008,103,6.6,121,130000,7986,3670,"['Documentary']","['United States']",0
+"Misconceptions",2008,95,4.7,267,1600000,6892,3796,"['Satire', 'Comedy', 'Drama']","['United States']",0
+"Mutant Chronicles",2008,111,5.2,27000,2.5e+07,2131057,4724,"['Steampunk', 'Action', 'Adventure', 'Mystery', 'Sci-Fi']","['United Kingdom', 'United States']",0
+"Dream Boy",2008,88,6.2,4500,1200000,6534,2243,"['Drama', 'Romance']","['United States']",0
+"Watercolors",2008,114,6.4,1700,1200000,6305,3207,"['Drama', 'Romance']","['United States']",0
+"The Oxford Murders",2008,108,6.1,31000,1e+07,17646627,1191,"['Crime', 'Mystery', 'Thriller']","['Spain', 'United Kingdom', 'France', 'United States']",5
+"Red",2008,93,6.9,13000,2500000,15617,3176,"['Drama', 'Thriller']","['United States']",2
+"The Full Picture",2008,80,8.5,104,270000,3467,1358,"['Comedy']","['United States']",0
+"Lower Learning",2008,97,4,3000,2e+06,2804,2550,"['Comedy']","['United States']",0
+"Miss Conception",2008,104,4.6,2900,6e+06,569206,1342,"['Comedy', 'Romance']","['United Kingdom', 'United States', 'Germany']",0
+"Shuttle",2008,107,5.6,6200,2400000,1925,1925,"['Crime', 'Drama', 'Mystery', 'Thriller']","['United States']",0
+"House of Usher",2008,84,3.1,617,1e+06,1677,891,"['Horror', 'Thriller']","['United States']",0
+"Childless",2008,90,5.2,118,1e+06,1036,732,"['Drama']","['United States']",0
+"How to Be a Serial Killer",2008,91,5.4,2200,2e+06,899,899,"['Dark Comedy', 'Comedy', 'Crime', 'Horror']","['United States']",0
+"Disfigured",2008,96,6.6,347,50000,829,585,"['Drama']","['United States']",2
+"Rome & Jewel",2008,91,4,157,1200000,470,470,"['Drama', 'Musical']","['United States']",0
+"The Objective",2008,90,5.4,8600,4e+06,95,95,"['Horror', 'Sci-Fi', 'Thriller']","['United States', 'Morocco']",0
+"The Hunger Games: Catching Fire",2013,146,7.5,738000,1.3e+08,865011746,158074286,"['Dystopian Sci-Fi', 'Action', 'Adventure', 'Sci-Fi', 'Thriller']","['United States']",68
+"Iron Man 3",2013,130,7.1,920000,2e+08,1266152644,174144585,"['Superhero', 'Urban Adventure', 'Action', 'Adventure', 'Sci-Fi']","['United States']",63
+"Frozen",2013,102,7.4,680000,1.5e+08,1306450154,243390,"['Computer Animation', 'Fairy Tale', 'Mountain Adventure', 'Pop Musical', 'Adventure', 'Animation', 'Comedy', 'Family', 'Fantasy', 'Musical']","['United States']",60
+"Despicable Me 2",2013,98,7.3,438000,7.6e+07,970766005,83517315,"['Computer Animation', 'Urban Adventure', 'Adventure', 'Animation', 'Comedy', 'Crime', 'Family', 'Sci-Fi']","['United States']",66
+"Man of Steel",2013,143,7.1,826000,2.25e+08,670145518,116619362,"['Alien Invasion', 'Superhero', 'Urban Adventure', 'Action', 'Adventure', 'Sci-Fi']","['United States', 'United Kingdom']",46
+"Gravity",2013,91,7.7,876000,1e+08,723719539,55785112,"['Disaster', 'Sci-Fi Epic', 'Space Sci-Fi', 'Survival', 'Drama', 'Sci-Fi', 'Thriller']","['United Kingdom', 'United States']",187
+"Monsters University",2013,104,7.2,403000,2e+08,743559645,82429469,"['Computer Animation', 'Adventure', 'Animation', 'Comedy', 'Family', 'Fantasy']","['United States', 'Japan']",58
+"The Hobbit: The Desolation of Smaug",2013,161,7.8,724000,2.25e+08,959079095,73645197,"['Adventure Epic', 'Fantasy Epic', 'Quest', 'Sword & Sorcery', 'Adventure', 'Fantasy']","['New Zealand', 'United States']",90
+"Fast & Furious 6",2013,130,7,424000,1.6e+08,788683342,97375245,"['Action Epic', 'Car Action', 'Action', 'Thriller']","['United States', 'Japan', 'Spain', 'Hong Kong']",22
+"Oz the Great and Powerful",2013,130,6.3,217000,2.15e+08,493311825,79110453,"['Adventure Epic', 'Fairy Tale', 'Adventure', 'Family', 'Fantasy']","['United States']",31
+"Star Trek Into Darkness",2013,132,7.7,502000,1.9e+08,467365246,70165559,"['Space Sci-Fi', 'Action', 'Adventure', 'Sci-Fi']","['United States']",58
+"Thor: The Dark World",2013,112,6.7,742000,1.7e+08,644783140,85737841,"['Quest', 'Superhero', 'Action', 'Adventure']","['United States']",21
+"World War Z",2013,116,7,743000,1.9e+08,540455876,66411834,"['Disaster', 'Globetrotting Adventure', 'Zombie Horror', 'Action', 'Adventure', 'Horror', 'Sci-Fi']","['United States', 'United Kingdom']",25
+"The Croods",2013,98,7.1,239000,1.35e+08,587266745,43639736,"['Computer Animation', 'Supernatural Fantasy', 'Survival', 'Adventure', 'Animation', 'Comedy', 'Family', 'Fantasy']","['United States']",46
+"The Heat",2013,117,6.6,184000,4.3e+07,229930771,39115043,"['Buddy Cop', 'Action', 'Comedy', 'Crime']","['United States', 'United Kingdom']",16
+"We're the Millers",2013,110,7,5e+05,3.7e+07,269994119,26419396,"['Road Trip', 'Comedy', 'Crime']","['United States', 'United Kingdom']",17
+"American Hustle",2013,138,7.2,507000,4e+07,251171807,740455,"['Period Drama', 'True Crime', 'Crime', 'Drama']","['United States', 'China']",227
+"The Great Gatsby",2013,143,7.2,613000,1.05e+08,353660028,50085185,"['Period Drama', 'Tragedy', 'Tragic Romance', 'Drama', 'Romance']","['Australia', 'United States']",86
+"The Conjuring",2013,112,7.5,575000,2e+07,320415166,41855326,"['Supernatural Horror', 'Suspense Mystery', 'Horror', 'Mystery', 'Thriller']","['United States']",22
+"Identity Thief",2013,111,5.7,143000,3.5e+07,173965010,34551025,"['Road Trip', 'Slapstick', 'Comedy', 'Crime', 'Drama']","['United States']",9
+"Grown Ups 2",2013,101,5.4,176000,8e+07,246984278,41508572,"['Comedy']","['United States']",15
+"The Wolverine",2013,126,6.7,507000,1.2e+08,414828246,53113752,"['Samurai', 'Superhero', 'Action', 'Sci-Fi']","['United States', 'United Kingdom']",11
+"Anchorman 2: The Legend Continues",2013,119,6.3,196000,5e+07,173649931,26232425,"['Farce', 'Satire', 'Comedy']","['United States']",23
+"Lone Survivor",2013,121,7.5,313000,4e+07,154802912,90872,"['Docudrama', 'One-Person Army Action', 'Action', 'Biography', 'Drama', 'War']","['United States', 'United Kingdom']",16
+"G.I. Joe: Retaliation",2013,110,5.7,189000,1.3e+08,375740705,40501814,"['Action', 'Adventure', 'Sci-Fi', 'Thriller']","['United States', 'Canada']",12
+"Cloudy with a Chance of Meatballs 2",2013,95,6.3,118000,7.8e+07,274325949,34017930,"['Computer Animation', 'Adventure', 'Animation', 'Comedy', 'Family', 'Fantasy', 'Sci-Fi']","['United States', 'Canada']",0
+"Now You See Me",2013,115,7.2,727000,7.5e+07,351723989,29350389,"['Caper', 'Heist', 'Crime', 'Mystery', 'Thriller']","['United States', 'France']",3
+"The Wolf of Wall Street",2013,180,8.2,1600000,1e+08,407039432,18361578,"['Dark Comedy', 'Docudrama', 'Epic', 'Raunchy Comedy', 'Satire', 'True Crime', 'Biography', 'Comedy', 'Crime', 'Drama']","['United States']",179
+"The Butler",2013,132,7.2,121000,3e+07,177313795,24637312,"['Biography', 'Drama']","['United States']",55
+"The Hangover Part III",2013,100,5.8,344000,1.03e+08,362000072,41671198,"['Dark Comedy', 'Raunchy Comedy', 'Comedy', 'Crime']","['United States']",7
+"Epic",2013,102,6.6,111000,1e+08,268426634,33531068,"['Computer Animation', 'Action', 'Adventure', 'Animation', 'Family', 'Fantasy', 'Mystery']","['United States', 'United Kingdom']",21
+"Captain Phillips",2013,134,7.8,503000,5.5e+07,218791811,25718314,"['Docudrama', 'True Crime', 'Action', 'Biography', 'Crime', 'Drama', 'Thriller']","['United States']",154
+"Jackass Presents: Bad Grandpa",2013,92,6.5,99000,1.5e+07,151826547,32055177,"['Dark Comedy', 'Comedy']","['United States']",10
+"Pacific Rim",2013,131,6.9,541000,1.9e+08,411002906,37285325,"['Kaiju', 'Action', 'Adventure', 'Sci-Fi']","['United States', 'Mexico']",48
+"This Is the End",2013,107,6.6,441000,3.2e+07,126041322,20719162,"['Dark Comedy', 'High-Concept Comedy', 'Satire', 'Comedy', 'Fantasy']","['United States']",23
+"Olympus Has Fallen",2013,119,6.5,298000,7e+07,170270201,30373794,"['One-Person Army Action', 'Action', 'Thriller']","['United States']",5
+"42",2013,128,7.5,105000,4e+07,97510197,27487144,"['Baseball', 'Docudrama', 'Biography', 'Drama', 'Sport']","['United States']",21
+"Elysium",2013,109,6.6,479000,1.15e+08,286140700,29807393,"['Cyberpunk', 'Dystopian Sci-Fi', 'Sci-Fi Epic', 'Action', 'Drama', 'Sci-Fi', 'Thriller']","['United States', 'Canada']",10
+"Planes",2013,91,5.7,50000,5e+07,240171783,22232291,"['Computer Animation', 'Adventure', 'Animation', 'Comedy', 'Family', 'Fantasy', 'Sport']","['United States', 'India']",0
+"The Lone Ranger",2013,150,6.4,247000,2.15e+08,260502115,29210849,"['Desert Adventure', 'Period Drama', 'Action', 'Adventure', 'Drama', 'Western']","['United States']",23
+"Oblivion",2013,124,7,564000,1.2e+08,286168572,37054485,"['Dystopian Sci-Fi', 'Action', 'Adventure', 'Sci-Fi']","['United States']",17
+"Insidious: Chapter 2",2013,106,6.6,194000,5e+06,161919318,40272103,"['Supernatural Horror', 'Horror', 'Mystery', 'Thriller']","['United Kingdom', 'Canada', 'United States']",0
+"Saving Mr. Banks",2013,125,7.5,172000,3.5e+07,117867984,413373,"['Docudrama', 'Period Drama', 'Showbiz Drama', 'Biography', 'Comedy', 'Drama']","['Australia', 'United Kingdom', 'United States']",74
+"Turbo",2013,96,6.4,116000,1.35e+08,282570682,21312625,"['Computer Animation', 'Motorsport', 'Adventure', 'Animation', 'Comedy', 'Family', 'Sport']","['United States', 'India']",13
+"2 Guns",2013,109,6.7,230000,6.1e+07,131940411,27059130,"['Buddy Cop', 'Action', 'Comedy', 'Thriller']","['United States']",0
+"White House Down",2013,131,6.3,241000,1.5e+08,205366737,24852258,"['One-Person Army Action', 'Action', 'Drama', 'Thriller']","['United States']",9
+"Safe Haven",2013,115,6.7,118000,2.8e+07,97594140,21401594,"['Feel-Good Romance', 'Drama', 'Romance', 'Thriller']","['United States']",7
+"The Smurfs 2",2013,105,5.3,47000,1.05e+08,347545360,17548389,"['Adventure', 'Animation', 'Comedy', 'Family', 'Fantasy']","['United States', 'France', 'Canada', 'Belgium']",0
+"The Best Man Holiday",2013,123,6.6,17000,1.7e+07,72835710,30107555,"['Holiday Comedy', 'Comedy', 'Drama', 'Holiday']","['United States']",15
+"Percy Jackson: Sea of Monsters",2013,106,5.7,129000,9e+07,199850315,14401054,"['Teen Adventure', 'Teen Fantasy', 'Adventure', 'Family', 'Fantasy']","['United States']",5
+"A Good Day to Die Hard",2013,98,5.2,218000,9.2e+07,304654182,24834845,"['Action', 'Thriller']","['United States', 'United Kingdom', 'Hungary']",8
+"Warm Bodies",2013,98,6.8,248000,3.5e+07,116980662,20353967,"['Dark Comedy', 'Romantic Comedy', 'Teen Horror', 'Zombie Horror', 'Comedy', 'Horror', 'Romance']","['United States', 'Canada']",10
+"Jack the Giant Slayer",2013,114,6.3,150000,1.95e+08,197687603,27202226,"['Adventure Epic', 'Fairy Tale', 'Fantasy Epic', 'Quest', 'Action', 'Adventure', 'Fantasy']","['United States']",4
+"The Purge",2013,85,5.7,248000,3e+06,89328627,34058360,"['Dystopian Sci-Fi', 'Slasher Horror', 'Horror', 'Sci-Fi', 'Thriller']","['United States', 'France']",6
+"Last Vegas",2013,105,6.6,138000,2.8e+07,134410488,16334566,"['Comedy']","['United States']",0
+"Ender's Game",2013,114,6.6,258000,1.1e+08,125544024,27017351,"['Alien Invasion', 'Sci-Fi Epic', 'Space Sci-Fi', 'Action', 'Adventure', 'Sci-Fi']","['United States']",6
+"Prisoners",2013,153,8.2,849000,4.6e+07,122127446,20817053,"['Psychological Thriller', 'Suspense Mystery', 'Crime', 'Drama', 'Mystery', 'Thriller']","['United States']",38
+"After Earth",2013,100,4.8,212000,1.3e+08,243611982,27520040,"['Action Epic', 'Adventure Epic', 'Quest', 'Space Sci-Fi', 'Survival', 'Action', 'Adventure', 'Sci-Fi']","['United States']",8
+"The Secret Life of Walter Mitty",2013,114,7.3,350000,9e+07,188133322,12765508,"['Globetrotting Adventure', 'Adventure', 'Comedy', 'Drama', 'Fantasy', 'Romance']","['United States', 'United Kingdom']",18
+"12 Years a Slave",2013,134,8.1,756000,2e+07,187734091,923715,"['Costume Drama', 'Docudrama', 'Epic', 'Period Drama', 'Tragedy', 'Biography', 'Drama', 'History']","['United Kingdom', 'United States']",337
+"Free Birds",2013,91,5.8,27000,5.5e+07,110387072,15805237,"['Animal Adventure', 'Buddy Comedy', 'Computer Animation', 'Time Travel', 'Adventure', 'Animation', 'Comedy', 'Family', 'Fantasy', 'History']","['United States', 'Canada', 'Japan', 'Australia']",0
+"Hansel & Gretel: Witch Hunters",2013,88,6.1,220000,5e+07,226349749,19690956,"['Dark Fantasy', 'Fairy Tale', 'Action', 'Fantasy', 'Horror']","['Germany', 'United States']",4
+"Evil Dead",2013,91,6.5,204000,1.7e+07,97542952,25775847,"['Splatter Horror', 'Teen Horror', 'Zombie Horror', 'Horror']","['United States', 'New Zealand', 'Australia']",20
+"RED 2",2013,116,6.6,184000,8.4e+07,148075565,18048422,"['Dark Comedy', 'Action', 'Comedy', 'Crime', 'Thriller']","['United States', 'Canada', 'Russia']",0
+"A Madea Christmas",2013,100,5.1,7400,2.5e+07,53396635,16007634,"['Holiday Comedy', 'Comedy', 'Drama', 'Holiday', 'Romance']","['United States']",6
+"The Call",2013,94,6.7,131000,1.3e+07,68572631,17118745,"['Drama', 'Thriller']","['United States']",11
+"Pain & Gain",2013,129,6.4,234000,2.6e+07,87305549,20244505,"['Caper', 'True Crime', 'Action', 'Biography', 'Comedy', 'Crime', 'Drama', 'Mystery']","['United States']",0
+"Gangster Squad",2013,113,6.7,225000,6e+07,105200903,17070347,"['Gangster', 'True Crime', 'Action', 'Crime', 'Drama', 'Thriller']","['United States']",0
+"The Internship",2013,119,6.3,218000,5.8e+07,93492844,17325307,"['Buddy Comedy', 'Comedy']","['United States']",0
+"Snitch",2013,112,6.4,94000,1.5e+07,57824674,13167607,"['Action', 'Drama', 'Thriller']","['United States', 'United Arab Emirates', 'United Kingdom']",0
+"Riddick",2013,119,6.4,181000,3.8e+07,98337295,19030375,"['Action', 'Adventure', 'Sci-Fi', 'Thriller']","['Canada', 'United States']",0
+"A Haunted House",2013,86,5,51000,2500000,60159584,18101682,"['Found Footage Horror', 'Parody', 'Comedy', 'Fantasy', 'Horror']","['United States']",0
+"47 Ronin",2013,128,6.2,174000,1.75e+08,151783839,9910310,"['Samurai', 'Action', 'Drama', 'Fantasy']","['United States', 'United Kingdom', 'Japan', 'Hungary']",0
+"August: Osage County",2013,121,7.2,97000,2.5e+07,74188937,179302,"['Comedy', 'Drama']","['United States']",66
+"Philomena",2013,98,7.6,105000,1.2e+07,100129872,128435,"['Biography', 'Comedy', 'Drama']","['United Kingdom', 'France', 'United States']",86
+"The Family",2013,111,6.3,125000,3e+07,78418811,14034764,"['Dark Comedy', 'Farce', 'Comedy', 'Crime', 'Thriller']","['France', 'United Kingdom', 'United States']",0
+"Walking with Dinosaurs 3D",2013,87,5.2,12000,8e+07,126546518,7091938,"['Computer Animation', 'Dinosaur Adventure', 'Adventure', 'Animation', 'Comedy', 'Family']","['India', 'United Kingdom', 'Australia', 'United States']",0
+"Carrie",2013,100,5.8,151000,3e+07,84790678,16101552,"['Supernatural Horror', 'Teen Horror', 'Tragedy', 'Drama', 'Horror', 'Thriller']","['United States']",7
+"Texas Chainsaw",2013,92,4.8,58000,2e+07,47340586,21744470,"['Slasher Horror', 'Horror', 'Mystery', 'Thriller']","['United States']",7
+"R.I.P.D.",2013,96,5.6,147000,1.3e+08,78324220,12691415,"['Buddy Cop', 'Action', 'Adventure', 'Comedy', 'Crime', 'Fantasy', 'Sci-Fi']","['United States']",0
+"Blue Jasmine",2013,98,7.3,215000,1.8e+07,99104804,612064,"['Psychological Drama', 'Tragedy', 'Comedy', 'Drama', 'Romance']","['United States']",83
+"Kevin Hart: Let Me Explain",2013,75,6.7,9400,2500000,32318051,10030463,"['Stand-Up', 'Comedy', 'Documentary']","['United States']",0
+"Side Effects",2013,106,7.1,2e+05,3e+07,63414135,9303145,"['Conspiracy Thriller', 'Medical Drama', 'Psychological Thriller', 'Crime', 'Drama', 'Mystery', 'Thriller']","['United States']",0
+"Scary Movie V",2013,86,3.5,79000,2e+07,78378744,14157367,"['Parody', 'Comedy', 'Horror']","['United States']",0
+"The Mortal Instruments: City of Bones",2013,130,5.8,140000,6e+07,95396573,9336957,"['Teen Adventure', 'Action', 'Adventure', 'Fantasy', 'Horror', 'Mystery', 'Romance']","['United States', 'Germany', 'Canada', 'United Kingdom']",11
+"Delivery Man",2013,105,6.3,84000,2.6e+07,53120346,7944977,"['Comedy', 'Drama']","['United States', 'India', 'Canada']",0
+"Home Run",2013,113,5.9,3400,1200000,2861020,1623000,"['Drama', 'Sport']","['United States']",0
+"Under the Skin",2013,108,6.3,163000,13300000,7494387,133154,"['Drama', 'Horror', 'Mystery', 'Sci-Fi', 'Thriller']","['United Kingdom', 'Switzerland', 'United States']",112
+"I'm in Love with a Church Girl",2013,118,4.2,2100,5e+06,2503392,971826,"['Crime', 'Drama', 'Romance']","['United States']",0
+"Trance",2013,101,6.9,119000,2e+07,24261569,131145,"['Dark Comedy', 'Psychological Thriller', 'Crime', 'Drama', 'Mystery', 'Thriller']","['United Kingdom', 'France', 'United States']",3
+"The East",2013,116,6.8,53000,6500000,2891812,77031,"['Psychological Drama', 'Spy', 'Adventure', 'Crime', 'Drama', 'Mystery', 'Thriller']","['United Kingdom', 'United States']",7
+"Oldboy",2013,104,5.8,82000,3e+07,5186767,885382,"['Action', 'Drama', 'Mystery', 'Thriller']","['United States']",0
+"Austenland",2013,97,6.3,24000,4900000,2313509,40662,"['Romantic Comedy', 'Comedy', 'Romance']","['United Kingdom', 'United States']",0
+"The Oscar Nominated Short Films 2013: Live Action",2013,115,7.3,230,7e+05,2142342,371605,"['Drama']","['United States', 'Afghanistan', 'France', 'Belgium', 'Canada']",0
+"Blackfish",2013,83,8.1,74000,1500000,2303417,75962,"['Documentary', 'Drama', 'Horror', 'Thriller']","['United States']",41
+"The Immigrant",2013,120,6.6,34000,1.6e+07,5952884,44064,"['Period Drama', 'Tragedy', 'Drama', 'Romance']","['United States']",30
+"Stoker",2013,99,6.7,116000,1.2e+07,12077441,160547,"['Psychological Thriller', 'Drama', 'Thriller']","['United Kingdom', 'United States']",42
+"Locke",2013,85,7.1,163000,2e+06,5192314,81006,"['Psychological Drama', 'Drama']","['United Kingdom', 'United States']",33
+"I'm So Excited!",2013,90,5.6,25000,5e+06,21259853,97328,"['Comedy', 'Musical']","['Spain', 'United States']",10
+"Gimme Shelter",2013,101,6.4,9600,3200000,1362018,689070,"['Drama']","['United States']",0
+"The Ultimate Life",2013,105,6.1,1700,3100000,1327841,659912,"['Drama', 'Romance']","['United States']",0
+"Repentance",2013,90,4.9,2800,5e+06,1194961,501290,"['Drama', 'Horror', 'Thriller']","['United States']",0
+"Phantom",2013,98,5.9,15000,1.8e+07,1197759,508000,"['Drama', 'History', 'Thriller', 'War']","['United States']",0
+"Third Person",2013,137,6.3,30000,2.8e+07,2624761,38856,"['Drama', 'Romance']","['Belgium', 'United States', 'United Kingdom', 'Germany', 'Italy', 'France']",0
+"Short Term 12",2013,96,7.9,93000,4e+05,1645164,56206,"['Psychological Drama', 'Drama']","['United States']",72
+"Alone Yet Not Alone",2013,103,4.7,997,7e+06,887851,125775,"['Action', 'Drama', 'History', 'Romance', 'War']","['United States']",0
+"Nymphomaniac: Vol. I",2013,117,6.9,134000,4700000,13269941,158369,"['Psychological Drama', 'Drama']","['Denmark', 'Germany', 'Belgium', 'United Kingdom', 'France', 'Sweden', 'United States']",30
+"Only God Forgives",2013,90,5.7,120000,4800000,10658332,313958,"['Action', 'Crime', 'Drama', 'Thriller']","['Denmark', 'France', 'United States', 'Sweden', 'Belgium', 'Thailand']",20
+"Parkland",2013,93,6.4,18000,1e+07,1412181,310246,"['Drama', 'History', 'Mystery', 'Thriller']","['United States']",0
+"Salinger",2013,120,6.7,2700,2e+06,650675,86956,"['Documentary']","['United States']",0
+"Upstream Color",2013,96,6.5,35000,50000,587174,28649,"['Medical Drama', 'Psychological Drama', 'Suspense Mystery', 'Drama', 'Mystery', 'Sci-Fi']","['United States']",35
+"Joe",2013,117,6.8,52000,4e+06,2431443,105881,"['Crime', 'Drama', 'Thriller']","['United States']",9
+"Lovelace",2013,93,6.2,43000,1e+07,1585583,184536,"['Biography', 'Drama']","['United States']",3
+"The Face of Love",2013,92,6.2,6100,4e+06,1806548,24660,"['Drama', 'Mystery', 'Romance']","['United States']",0
+"Drinking Buddies",2013,90,6.1,61000,650000,401914,19505,"['Comedy', 'Drama', 'Romance']","['United States']",4
+"Camp",2013,109,6.8,800,2e+05,324977,7785,"['Drama']","['United States']",0
+"Not Today",2013,118,5.5,778,1600000,318121,96347,"['Drama']","['United States']",0
+"Life of Crime",2013,98,5.8,21000,1.2e+07,1456675,104300,"['Comedy', 'Crime']","['United States']",0
+"Blue Ruin",2013,90,7.1,82000,420000,993313,32608,"['Crime', 'Drama', 'Thriller']","['United States', 'France']",21
+"The Zero Theorem",2013,107,6,50000,8500000,1486506,83803,"['Cyberpunk', 'Comedy', 'Drama', 'Fantasy', 'Mystery', 'Sci-Fi']","['United Kingdom', 'Romania', 'France', 'United States']",7
+"Prince Avalanche",2013,94,6.3,21000,725000,442313,36694,"['Comedy', 'Drama']","['United States']",6
+"Copperhead",2013,120,5.6,1100,1.2e+07,171740,55625,"['Drama']","['United States']",0
+"Mother of George",2013,107,6.5,1300,750000,157937,22500,"['Drama']","['Nigeria', 'United States']",10
+"Snake & Mongoose",2013,102,5.7,791,3e+06,152200,20254,"['Biography', 'Sport']","['United States']",0
+"The Congress",2013,122,6.4,20000,34148170,758754,28640,"['Animation', 'Drama', 'Sci-Fi']","['Israel', 'Germany', 'Poland', 'Luxembourg', 'Belgium', 'France', 'United States', 'India']",13
+"Slaughter Creek",2013,94,3.1,255,1e+06,136815,49392,"['Drama', 'Horror']","['United States']",0
+"Make Your Move",2013,110,5.5,3400,1.5e+07,1583687,81172,"['Drama', 'Musical', 'Romance']","['South Korea', 'United States']",0
+"The Square",2013,95,8,9500,1500000,124244,16359,"['News', 'Documentary', 'Drama', 'History']","['United Kingdom', 'Egypt', 'United States']",16
+"The Investigator",2013,101,5.4,361,1100000,103739,93690,"['Drama', 'Family', 'Sport']","['United States']",0
+"Coherence",2013,89,7.2,155000,50000,139745,17000,"['Horror', 'Mystery', 'Sci-Fi', 'Thriller']","['United States', 'United Kingdom']",6
+"The United States of Autism",2013,93,6.3,48,65000,100403,3413,"['News', 'Biography', 'Documentary', 'Family']","['United States']",0
+"Man of Tai Chi",2013,105,6,41000,2.5e+07,5464885,61054,"['Kung Fu', 'Martial Arts', 'Action', 'Drama']","['United States', 'China', 'Hong Kong']",0
+"King's Faith",2013,108,6.3,843,650000,90106,27648,"['Drama']","['United States']",0
+"Water & Power",2013,88,4.2,151,6e+05,82312,39428,"['Crime', 'Drama']","['United States']",0
+"Seasons of Gray",2013,90,6.2,225,5e+05,70605,31953,"['Drama']","['United States']",0
+"Pandora's Promise",2013,87,7.3,2000,1e+06,66680,23419,"['Documentary']","['United States']",0
+"Cheap Thrills",2013,88,6.7,21000,2e+05,59424,18638,"['Dark Comedy', 'Satire', 'Comedy', 'Crime', 'Drama', 'Thriller']","['United States']",8
+"The Canyons",2013,99,3.8,12000,250000,270185,13351,"['Erotic Thriller', 'Drama', 'Thriller']","['United States']",2
+"Line of Duty",2013,100,4.8,948,2500000,54204,26839,"['Action', 'Crime', 'Thriller']","['United States']",0
+"Hateship Loveship",2013,104,6.1,7300,5e+06,83008,6015,"['Drama', 'Romance']","['United States']",0
+"At Middleton",2013,99,6.5,9300,2500000,82993,33768,"['Comedy', 'Romance']","['United States']",0
+"God Loves Uganda",2013,83,7.4,1300,1300000,51229,7300,"['Faith & Spirituality Documentary', 'Documentary']","['United States']",6
+"Decoding Annie Parker",2013,91,6.2,3300,2e+06,60048,16781,"['Drama']","['United States']",7
+"Blood Ties",2013,127,6.5,22000,25500000,2566435,26912,"['Action', 'Crime', 'Drama', 'Thriller']","['France', 'United States']",0
+"Holla II",2013,90,6.2,129,1e+06,41537,37444,"['Teen Horror', 'Comedy', 'Horror']","['United States']",0
+"CBGB",2013,102,6.6,11000,5e+06,40400,3909,"['Crime', 'Drama', 'Music', 'Romance']","['United States']",0
+"Savannah",2013,101,5.8,1800,5e+06,37240,15599,"['Drama', 'Family', 'History', 'Romance']","['United States']",0
+"Redemption",2013,100,6.2,79000,2e+07,12671109,19977,"['Action', 'Drama']","['United States', 'United Kingdom']",0
+"Underdogs",2013,102,5.8,1200,2500000,35271,18722,"['Football', 'Drama', 'Family', 'Sport']","['United States']",0
+"Filth",2013,97,7,118000,5e+06,8490396,7526,"['Dark Comedy', 'Police Procedural', 'Action', 'Comedy', 'Crime', 'Drama']","['United Kingdom', 'Germany', 'Sweden', 'Belgium', 'United States']",15
+"Jimmy P: Psychotherapy of a Plains Indian",2013,117,6.1,3200,1e+07,1470582,7191,"['Biography', 'Drama', 'Thriller']","['United States', 'France']",0
+"Adult World",2013,97,6.1,19000,4e+06,37887,3783,"['Comedy', 'Drama']","['United States']",0
+"The Power of Few",2013,96,5.1,4300,4e+06,45659,7614,"['Conspiracy Thriller', 'Action', 'Crime', 'Drama', 'Thriller']","['United States']",0
+"The Last Days on Mars",2013,98,5.5,39000,7e+06,187191,4608,"['B-Horror', 'Dark Comedy', 'Space Sci-Fi', 'Adventure', 'Horror', 'Sci-Fi', 'Thriller']","['United Kingdom', 'Ireland', 'Belgium', 'United States']",0
+"Wedding Palace",2013,98,5.6,261,1e+06,27183,19908,"['Comedy', 'Romance']","['United States']",0
+"Whensday",2013,100,7.2,27,4000,19463,12497,"['Comedy']","['United States']",0
+"Torn",2013,80,5.9,596,450000,18202,4881,"['Drama']","['Pakistan', 'United States']",0
+"As I Lay Dying",2013,110,5.3,4200,5e+06,71759,7143,"['Drama']","['United States']",0
+"Justice Is Mind",2013,153,5.1,300,25000,14360,5418,"['Crime', 'Drama', 'Mystery', 'Sci-Fi']","['United States']",0
+"Revenge of the Mekons",2013,95,7.4,109,3e+05,11861,2354,"['Documentary']","['United States']",0
+"Midget Zombie Takeover",2013,73,3.2,145,2000,11006,2755,"['Comedy', 'Horror']","['United States']",0
+"A Resurrection",2013,89,3.9,1800,5e+06,10730,7300,"['Supernatural Horror', 'Drama', 'Horror', 'Thriller']","['United States']",0
+"American Meat",2013,84,8,30,505598,10650,7659,"['Documentary']","['United States']",0
+"Welcome to the Punch",2013,99,6.1,35000,8500000,3926386,2736,"['Action', 'Crime', 'Thriller']","['United Kingdom', 'United States']",0
+"The Sacrament",2013,99,6.1,22000,4e+06,9221,583,"['Conspiracy Thriller', 'Found Footage Horror', 'Horror', 'Thriller']","['United States']",12
+"Black Panther",2018,134,7.3,860000,2e+08,1349926083,202003951,"['Superhero', 'Action', 'Adventure', 'Sci-Fi']","['United States']",290
+"Avengers: Infinity War",2018,149,8.4,1300000,3.21e+08,2052415039,257698183,"['Space Sci-Fi', 'Superhero', 'Action', 'Adventure', 'Sci-Fi']","['United States', 'Norway']",81
+"Incredibles 2",2018,118,7.5,345000,2e+08,1243225667,182687905,"['Computer Animation', 'Superhero', 'Urban Adventure', 'Action', 'Adventure', 'Animation', 'Comedy', 'Family', 'Fantasy', 'Sci-Fi']","['United States', 'Japan']",81
+"Jurassic World: Fallen Kingdom",2018,128,6.1,354000,1.7e+08,1310469037,148024610,"['Dinosaur Adventure', 'Action', 'Adventure', 'Sci-Fi']","['United States', 'China']",26
+"Aquaman",2018,143,6.8,533000,1.6e+08,1152028393,67873522,"['Globetrotting Adventure', 'Sea Adventure', 'Superhero', 'Action', 'Adventure', 'Fantasy', 'Sci-Fi']","['United States']",36
+"Deadpool 2",2018,119,7.6,697000,1.1e+08,785896632,125507153,"['Dark Comedy', 'Gun Fu', 'Raunchy Comedy', 'Superhero', 'Time Travel', 'Action', 'Adventure', 'Comedy', 'Sci-Fi']","['United States', 'Canada']",52
+"The Grinch",2018,85,6.4,102000,7.5e+07,539032799,67572855,"['Computer Animation', 'Holiday Animation', 'Holiday Comedy', 'Holiday Family', 'Animation', 'Comedy', 'Family', 'Fantasy', 'Holiday']","['France', 'United States']",18
+"Mission: Impossible - Fallout",2018,147,7.7,389000,1.78e+08,791658205,61236534,"['Action Epic', 'Globetrotting Adventure', 'Spy', 'Action', 'Adventure', 'Thriller']","['United States', 'China', 'France', 'Norway']",41
+"Bohemian Rhapsody",2018,134,7.9,613000,5.2e+07,910813521,51061119,"['Docudrama', 'Period Drama', 'Showbiz Drama', 'Biography', 'Drama', 'Music']","['United Kingdom', 'United States']",81
+"Ant-Man and the Wasp",2018,118,7,465000,1.62e+08,622674139,75812205,"['Superhero', 'Action', 'Adventure', 'Comedy', 'Sci-Fi']","['United States', 'Canada']",21
+"A Star Is Born",2018,136,7.6,431000,3.6e+07,436433122,42908051,"['Romantic Epic', 'Tragedy', 'Tragic Romance', 'Drama', 'Music', 'Romance']","['United States']",290
+"Solo: A Star Wars Story",2018,135,6.9,389000,2.75e+08,392924807,84420489,"['Sci-Fi Epic', 'Space Sci-Fi', 'Action', 'Adventure', 'Sci-Fi']","['United States']",27
+"Venom",2018,112,6.6,566000,1e+08,856085161,80255756,"['Kaiju', 'Superhero', 'Urban Adventure', 'Action', 'Adventure', 'Sci-Fi']","['United States', 'China']",9
+"Ralph Breaks the Internet",2018,112,7,191000,1.75e+08,529323962,56237634,"['Buddy Comedy', 'Computer Animation', 'Adventure', 'Animation', 'Comedy', 'Family', 'Fantasy', 'Sci-Fi', 'Sport']","['United States']",67
+"Spider-Man: Into the Spider-Verse",2018,117,8.4,710000,9e+07,393602435,35363376,"['Computer Animation', 'Superhero', 'Supernatural Fantasy', 'Teen Adventure', 'Urban Adventure', 'Action', 'Adventure', 'Animation', 'Comedy', 'Family']","['Canada', 'United States']",61
+"A Quiet Place",2018,90,7.5,618000,1.7e+07,340955294,50203562,"['Alien Invasion', 'Monster Horror', 'Drama', 'Horror', 'Sci-Fi']","['United States']",129
+"Crazy Rich Asians",2018,120,6.9,198000,3e+07,239343729,26510140,"['Feel-Good Romance', 'Romantic Comedy', 'Comedy', 'Drama', 'Romance']","['United States', 'China']",70
+"Mary Poppins Returns",2018,130,6.7,97000,1.3e+08,362529106,23523121,"['Supernatural Fantasy', 'Adventure', 'Comedy', 'Family', 'Fantasy', 'Music', 'Musical']","['United States', 'United Kingdom', 'Denmark', 'Australia', 'Canada', 'India']",112
+"Hotel Transylvania 3: Summer Vacation",2018,97,6.3,90000,8e+07,541504608,44076225,"['Computer Animation', 'Adventure', 'Animation', 'Comedy', 'Family', 'Fantasy']","['United States', 'South Korea']",9
+"Fantastic Beasts: The Crimes of Grindelwald",2018,134,6.5,317000,2e+08,655755901,62163104,"['Sword & Sorcery', 'Adventure', 'Family', 'Fantasy']","['United Kingdom', 'United States']",23
+"Halloween",2018,106,6.5,177000,1e+07,259939869,76221545,"['Serial Killer', 'Slasher Horror', 'Teen Horror', 'Crime', 'Drama', 'Horror', 'Thriller']","['United States']",27
+"The Meg",2018,113,5.7,215000,1.3e+08,529338515,45402195,"['Kaiju', 'Action', 'Horror', 'Sci-Fi', 'Thriller']","['United States', 'China']",6
+"Ocean's Eight",2018,110,6.3,249000,7e+07,297795726,41607378,"['Caper', 'Heist', 'Action', 'Comedy', 'Crime']","['United States']",17
+"Ready Player One",2018,140,7.4,506000,1.75e+08,607874422,41764050,"['Cyberpunk', 'Dystopian Sci-Fi', 'Quest', 'Teen Adventure', 'Action', 'Adventure', 'Sci-Fi']","['United States', 'India', 'Singapore', 'Canada', 'United Kingdom', 'Japan', 'Australia']",57
+"Bumblebee",2018,114,6.7,196000,1.35e+08,467989645,21654047,"['Alien Invasion', 'Car Action', 'Teen Adventure', 'Urban Adventure', 'Action', 'Adventure', 'Sci-Fi']","['United States', 'China']",13
+"Mamma Mia! Here We Go Again",2018,114,6.6,114000,7.5e+07,395607854,34952180,"['Jukebox Musical', 'Pop Musical', 'Romantic Comedy', 'Comedy', 'Musical', 'Romance']","['United Kingdom', 'United States', 'Japan', 'China', 'Croatia']",13
+"The Nun",2018,96,5.4,178000,2.2e+07,366082797,53807379,"['Supernatural Horror', 'Horror', 'Mystery', 'Thriller']","['United States']",0
+"Creed II",2018,130,7.1,160000,5e+07,214215889,35574710,"['Boxing', 'Action', 'Drama', 'Sport']","['United States']",12
+"Peter Rabbit",2018,95,6.6,50000,5e+07,351516614,25010928,"['Animal Adventure', 'Slapstick', 'Adventure', 'Animation', 'Comedy', 'Drama', 'Family', 'Fantasy']","['United States', 'Australia', 'United Kingdom']",17
+"The Mule",2018,116,7,158000,5e+07,174804407,17509431,"['Contemporary Western', 'Drug Crime', 'True Crime', 'Crime', 'Drama', 'Thriller']","['United States', 'Canada']",10
+"The Equalizer 2",2018,121,6.7,209000,6.2e+07,190400157,36011640,"['One-Person Army Action', 'Action', 'Crime', 'Thriller']","['United States']",4
+"Rampage",2018,107,6.1,191000,1.2e+08,428128399,35753093,"['Jungle Adventure', 'Kaiju', 'Action', 'Adventure', 'Sci-Fi']","['United States']",0
+"A Wrinkle in Time",2018,109,4.3,48000,1e+08,132675864,33123609,"['Fantasy Epic', 'Sci-Fi Epic', 'Teen Fantasy', 'Time Travel', 'Adventure', 'Drama', 'Family', 'Fantasy', 'Sci-Fi']","['United States']",17
+"Fifty Shades Freed",2018,105,4.5,77000,5.5e+07,371985018,38560195,"['Steamy Romance', 'Drama', 'Mystery', 'Romance', 'Thriller']","['United States', 'China']",10
+"Christopher Robin",2018,104,7.2,87000,7.5e+07,197744825,24585139,"['Adventure', 'Comedy', 'Drama', 'Family', 'Fantasy', 'Musical']","['United Kingdom', 'United States', 'Australia', 'Canada', 'Denmark']",13
+"Green Book",2018,130,8.2,614000,2.3e+07,321752656,320429,"['Docudrama', 'Period Drama', 'Road Trip', 'Biography', 'Comedy', 'Drama', 'Music']","['United States', 'China']",123
+"I Can Only Imagine",2018,110,7.3,19000,7e+06,86086881,17108914,"['Biography', 'Drama', 'Family', 'Music']","['United States']",5
+"Smallfoot",2018,96,6.6,44000,8e+07,218015531,23045635,"['Computer Animation', 'Adventure', 'Animation', 'Comedy', 'Drama', 'Family', 'Fantasy', 'Musical']","['United States']",14
+"Night School",2018,111,5.6,47000,2.9e+07,103105878,27257615,"['Comedy']","['United States', 'China']",4
+"The First Purge",2018,97,5.2,74000,1.3e+07,137056262,17374280,"['Dystopian Sci-Fi', 'Psychological Thriller', 'Action', 'Horror', 'Sci-Fi', 'Thriller']","['United States', 'China', 'Japan']",0
+"Game Night",2018,100,6.9,262000,3.7e+07,117768230,17005332,"['Dark Comedy', 'High-Concept Comedy', 'Urban Adventure', 'Action', 'Adventure', 'Comedy', 'Crime', 'Thriller']","['United States']",23
+"Book Club",2018,104,6.1,33000,1e+07,104438188,13582231,"['Romantic Comedy', 'Comedy', 'Drama', 'Romance']","['United States']",3
+"The House with a Clock in Its Walls",2018,105,6.1,57000,4.2e+07,131523093,26608020,"['Dark Fantasy', 'Steampunk', 'Comedy', 'Family', 'Fantasy', 'Horror', 'Mystery', 'Sci-Fi']","['United States', 'Canada', 'India']",0
+"Skyscraper",2018,102,5.8,138000,1.25e+08,304870828,24905015,"['Disaster', 'Action', 'Adventure', 'Thriller']","['United States']",0
+"Insidious: The Last Key",2018,103,5.7,75000,1e+07,167885588,29581355,"['Supernatural Horror', 'Horror', 'Mystery', 'Thriller']","['United States', 'Canada']",0
+"Instant Family",2018,118,7.3,126000,4.8e+07,120989830,14504315,"['Comedy', 'Drama']","['United States']",5
+"Blockers",2018,102,6.2,88000,2.1e+07,94019120,20556350,"['Raunchy Comedy', 'Satire', 'Comedy', 'Drama']","['United States']",7
+"Pacific Rim: Uprising",2018,111,5.6,131000,1.5e+08,290930148,28116535,"['Kaiju', 'Action', 'Adventure', 'Sci-Fi']","['United Kingdom', 'China', 'Japan', 'United States', 'Mexico']",0
+"Tomb Raider",2018,119,6.3,232000,9.4e+07,274950803,23633317,"['Globetrotting Adventure', 'Jungle Adventure', 'Action', 'Adventure', 'Fantasy', 'Thriller']","['United Kingdom', 'United States']",0
+"Maze Runner: The Death Cure",2018,143,6.3,173000,6.2e+07,288175335,24167011,"['Action', 'Adventure', 'Sci-Fi', 'Thriller']","['United States']",0
+"The Nutcracker and the Four Realms",2018,99,5.6,39000,1.2e+08,173961069,20352491,"['Holiday Family', 'Quest', 'Teen Fantasy', 'Adventure', 'Family', 'Fantasy', 'Holiday']","['Canada', 'United States', 'United Kingdom']",8
+"Tag",2018,100,6.5,152000,2.8e+07,78230625,14947396,"['Action', 'Comedy']","['United States']",0
+"A Simple Favor",2018,117,6.8,172000,2e+07,97644617,16011689,"['Dark Comedy', 'Psychological Thriller', 'Comedy', 'Crime', 'Mystery', 'Thriller']","['Canada', 'United States']",10
+"Life of the Party",2018,105,5.6,41000,3e+07,65659911,17886075,"['Comedy']","['United States']",4
+"The Predator",2018,107,5.3,151000,8.8e+07,160542134,24632284,"['Alien Invasion', 'Urban Adventure', 'Action', 'Adventure', 'Sci-Fi', 'Thriller']","['Canada', 'United States', 'United Kingdom', 'India', 'Australia', 'Brazil', 'China']",8
+"Overboard",2018,112,6,42000,1.2e+07,91244913,14711101,"['Romantic Comedy', 'Comedy', 'Romance']","['United States']",7
+"Sicario: Day of the Soldado",2018,122,7.1,175000,3.5e+07,75837743,19007566,"['Drug Crime', 'Action', 'Crime', 'Drama', 'Mystery', 'Thriller']","['United States', 'Mexico', 'Italy']",8
+"BlacKkKlansman",2018,135,7.5,298000,1.5e+07,93413709,10845330,"['Cop Drama', 'Docudrama', 'Period Drama', 'True Crime', 'Biography', 'Comedy', 'Crime', 'Drama']","['United States', 'China']",215
+"I Feel Pretty",2018,110,5.7,58000,3.2e+07,94539879,16030218,"['Comedy', 'Romance']","['China', 'United States']",6
+"Vice",2018,132,7.2,167000,6e+07,76073488,7768371,"['Dark Comedy', 'Political Drama', 'Satire', 'Biography', 'Comedy', 'Drama', 'History']","['United States']",139
+"Red Sparrow",2018,140,6.6,208000,6.9e+07,151572634,16853422,"['Psychological Thriller', 'Spy', 'Action', 'Drama', 'Thriller']","['United States', 'Hungary']",9
+"Breaking In",2018,88,5.5,17000,6e+06,51411620,17630285,"['Action', 'Thriller']","['United States', 'Japan']",0
+"Goosebumps 2: Haunted Halloween",2018,90,5.6,25000,3.5e+07,93320380,15802225,"['Adventure', 'Comedy', 'Fantasy', 'Horror']","['United States']",0
+"12 Strong",2018,130,6.5,95000,3.5e+07,67359190,15815025,"['Action', 'Drama', 'History', 'War']","['United States']",0
+"Den of Thieves",2018,140,7,129000,3e+07,80509622,15206108,"['Cop Drama', 'Heist', 'Action', 'Crime', 'Drama', 'Thriller']","['United States']",0
+"First Man",2018,141,7.3,208000,5.9e+07,105713218,16006065,"['Docudrama', 'Period Drama', 'Tragedy', 'Biography', 'Drama', 'History']","['United States', 'Japan', 'China']",193
+"Hereditary",2018,127,7.3,406000,1e+07,87819062,13575172,"['Psychological Horror', 'Psychological Thriller', 'Supernatural Horror', 'Tragedy', 'Witch Horror', 'Drama', 'Horror', 'Mystery', 'Thriller']","['United States']",113
+"Acrimony",2018,120,5.9,10000,2e+07,46403669,17170707,"['Drama', 'Horror', 'Romance', 'Thriller']","['United States']",0
+"Sherlock Gnomes",2018,86,5.3,15000,5.9e+07,90497778,10604774,"['Computer Animation', 'Adventure', 'Animation', 'Comedy', 'Drama', 'Family', 'Fantasy', 'Musical', 'Mystery', 'Romance']","['United Kingdom', 'United States']",6
+"Uncle Drew",2018,103,5.8,16000,1.9e+07,46664414,15242781,"['Basketball', 'Comedy', 'Drama', 'Sport']","['United States']",0
+"Widows",2018,129,6.8,106000,4.2e+07,75984700,12361307,"['Heist', 'Tragedy', 'Crime', 'Drama', 'Thriller']","['United Kingdom', 'United States']",107
+"Truth or Dare",2018,100,5.2,68000,3500000,95330710,18667855,"['Slasher Horror', 'Teen Horror', 'Horror', 'Mystery', 'Thriller']","['United States']",2
+"Love, Simon",2018,110,7.5,129000,1.7e+07,66719009,11756244,"['Coming-of-Age', 'Romantic Comedy', 'Teen Comedy', 'Teen Drama', 'Comedy', 'Drama', 'Romance']","['United States']",31
+"Second Act",2018,103,5.8,31000,1.6e+07,72294844,6489983,"['Comedy', 'Drama', 'Romance']","['United States']",0
+"The Commuter",2018,104,6.3,128000,3e+07,119942434,13701452,"['Conspiracy Thriller', 'One-Person Army Action', 'Action', 'Mystery', 'Thriller']","['United States', 'United Kingdom', 'France', 'China', 'Canada']",0
+"The 15:17 to Paris",2018,94,5.3,36000,3e+07,57176286,12554286,"['Biography', 'Drama', 'Thriller']","['United States']",3
+"Mile 22",2018,94,6.1,89000,5e+07,66308758,13710825,"['Spy', 'Action', 'Thriller']","['United States', 'China']",0
+"Alpha",2018,96,6.6,68000,5.1e+07,97254328,10352512,"['Adventure', 'Drama']","['United States', 'Canada', 'China']",0
+"Peppermint",2018,101,6.5,73000,2.5e+07,53918723,13423255,"['One-Person Army Action', 'Psychological Drama', 'Psychological Thriller', 'Action', 'Thriller']","['United States', 'China']",0
+"The Favourite",2018,119,7.5,244000,1.5e+07,95918706,422410,"['Dark Comedy', 'Period Drama', 'Biography', 'Comedy', 'Drama', 'History']","['Ireland', 'United Kingdom', 'United States']",358
+"Death Wish",2018,107,6.3,78000,3e+07,49562710,13010267,"['Action', 'Crime', 'Drama', 'Thriller']","['United States', 'Canada']",0
+"The Spy Who Dumped Me",2018,117,6,84000,4e+07,75339459,12103043,"['Buddy Cop', 'Globetrotting Adventure', 'High-Concept Comedy', 'Spy', 'Action', 'Adventure', 'Comedy']","['United States', 'Canada', 'Germany', 'Hungary', 'Netherlands']",4
+"Annihilation",2018,115,6.8,373000,4e+07,43070915,11071584,"['Alien Invasion', 'Body Horror', 'Psychological Horror', 'Adventure', 'Drama', 'Horror', 'Mystery', 'Sci-Fi', 'Thriller']","['United States', 'United Kingdom']",63
+"Nobody's Fool",2018,110,5,8300,1.9e+07,33705333,13743111,"['Comedy', 'Drama', 'Romance']","['United States']",0
+"Adrift",2018,96,6.6,63000,3.5e+07,59945012,11603039,"['Disaster', 'Sea Adventure', 'Survival', 'Action', 'Adventure', 'Biography', 'Drama', 'Romance', 'Thriller']","['Hong Kong', 'Iceland', 'United States', 'United Kingdom']",0
+"Robin Hood",2018,116,5.3,82000,1e+08,86493046,9195670,"['One-Person Army Action', 'Action', 'Adventure', 'Drama', 'Thriller']","['United States', 'Hong Kong', 'United Kingdom', 'France']",0
+"Super Troopers 2",2018,99,6,29000,13500000,31626386,15181624,"['Comedy', 'Crime', 'Mystery']","['United States']",2
+"Holmes & Watson",2018,90,3.9,40000,4.2e+07,40466970,7411522,"['Buddy Comedy', 'Bumbling Detective', 'Parody', 'Slapstick', 'True Crime', 'Whodunnit', 'Comedy', 'Crime', 'Mystery']","['United States', 'Canada']",4
+"Slender Man",2018,93,3.3,40000,1e+07,51738549,11371866,"['Psychological Horror', 'Supernatural Horror', 'Teen Horror', 'Horror', 'Mystery', 'Thriller']","['United States']",0
+"Teen Titans GO! To the Movies",2018,84,6.7,22000,1e+07,52390236,10411189,"['Hand-Drawn Animation', 'Parody', 'Satire', 'Slapstick', 'Superhero', 'Teen Comedy', 'Action', 'Adventure', 'Animation', 'Comedy']","['United States']",0
+"The Hate U Give",2018,133,7.5,42000,2.3e+07,34934009,512035,"['Coming-of-Age', 'Teen Drama', 'Crime', 'Drama']","['United States']",38
+"Searching",2018,102,7.6,184000,880000,75462037,388769,"['Psychological Thriller', 'Suspense Mystery', 'Drama', 'Mystery', 'Thriller']","['United States', 'Russia']",10
+"Winchester",2018,99,5.5,38000,3500000,44019588,9307626,"['Supernatural Horror', 'Biography', 'Fantasy', 'Horror', 'Mystery', 'Thriller']","['Australia', 'United States']",10
+"On the Basis of Sex",2018,120,7.1,40000,2e+07,38755968,686355,"['Biography', 'Drama', 'History']","['United States', 'China', 'Canada']",12
+"The Strangers: Prey at Night",2018,85,5.3,37000,5e+06,31039126,10402271,"['Slasher Horror', 'Horror']","['United Kingdom', 'United States']",0
+"White Boy Rick",2018,111,6.5,45000,2.9e+07,25957482,8860431,"['Drug Crime', 'True Crime', 'Crime', 'Drama']","['United States']",0
+"Overlord",2018,110,6.6,110000,3.8e+07,41657844,10202108,"['Body Horror', 'Steampunk', 'Zombie Horror', 'Action', 'Horror', 'Sci-Fi', 'War']","['United States', 'Canada']",7
+"Proud Mary",2018,89,5,11000,1.4e+07,21753365,9959053,"['Action', 'Crime', 'Drama', 'Thriller']","['United States']",4
+"The Happytime Murders",2018,91,5.5,31000,4e+07,27506452,9532425,"['Buddy Cop', 'Dark Comedy', 'Action', 'Comedy', 'Crime', 'Fantasy', 'Horror', 'Mystery', 'Thriller']","['United States', 'China']",10
+"SuperFly",2018,116,5.3,7800,1.6e+07,20780685,6870740,"['Action', 'Crime', 'Thriller']","['United States']",0
+"Show Dogs",2018,92,4,5200,5500000,39156854,6023972,"['Adventure', 'Comedy', 'Crime', 'Family']","['United Kingdom', 'United States']",0
+"Bad Times at the El Royale",2018,141,7.1,170000,3.2e+07,31882724,7132647,"['Suspense Mystery', 'Crime', 'Drama', 'Mystery', 'Thriller']","['United States']",12
+"Operation Finale",2018,122,6.6,50000,2.4e+07,17612099,6022758,"['Biography', 'Drama', 'History', 'Thriller', 'War']","['United States', 'Argentina']",0
+"Paul, Apostle of Christ",2018,108,6.6,10000,5e+06,25915966,5172585,"['Adventure', 'Biography', 'Drama', 'History']","['United States']",5
+"Sorry to Bother You",2018,112,6.9,91000,3200000,18170707,727266,"['Dark Comedy', 'Satire', 'Workplace Drama', 'Comedy', 'Drama', 'Fantasy', 'Sci-Fi']","['United States']",56
+"Mary Queen of Scots",2018,124,6.3,57000,2.5e+07,46712809,194777,"['Costume Drama', 'Period Drama', 'Biography', 'Drama', 'History']","['United Kingdom', 'United States', 'China']",31
+"Forever My Girl",2018,108,6.6,23000,3500000,16376066,4245630,"['Comedy', 'Drama', 'Music', 'Romance']","['United States']",0
+"Mortal Engines",2018,128,6.1,146000,1e+08,83869818,7559850,"['Dark Fantasy', 'Dystopian Sci-Fi', 'Fantasy Epic', 'Sci-Fi Epic', 'Steampunk', 'Action', 'Adventure', 'Fantasy', 'Sci-Fi', 'Thriller']","['United States', 'New Zealand', 'Japan', 'China']",2
+"Hunter Killer",2018,121,6.6,77000,4e+07,31676147,6653777,"['Action', 'Thriller']","['United Kingdom', 'China', 'France', 'United States']",0
+"If Beale Street Could Talk",2018,119,7.1,53000,1.2e+07,20596567,224476,"['Drama', 'Romance']","['United States']",197
+"The Girl in the Spider's Web",2018,115,6.1,53000,4.3e+07,35164920,7810112,"['Cyber Thriller', 'Action', 'Adventure', 'Crime', 'Drama', 'Mystery', 'Thriller']","['Germany', 'United Kingdom', 'Canada', 'Sweden', 'United States']",7
+"The Possession of Hannah Grace",2018,86,5.2,27000,7700000,43016528,6401744,"['Supernatural Horror', 'Horror', 'Mystery', 'Thriller']","['United States']",0
+"Eighth Grade",2018,93,7.3,84000,2e+06,14347433,263797,"['Coming-of-Age', 'Comedy', 'Drama']","['United States']",94
+"The Darkest Minds",2018,104,5.7,38000,3.4e+07,41142379,5842609,"['Superhero', 'Action', 'Adventure', 'Drama', 'Romance', 'Sci-Fi', 'Thriller']","['United States']",3
+"Upgrade",2018,100,7.5,217000,5e+06,16706680,4670905,"['Artificial Intelligence', 'Cyber Thriller', 'Cyberpunk', 'Dystopian Sci-Fi', 'Action', 'Sci-Fi', 'Thriller']","['United States', 'Australia']",26
+"Hell Fest",2018,89,5.5,20000,5500000,18160930,5130963,"['Slasher Horror', 'Teen Horror', 'Horror', 'Mystery', 'Thriller']","['United States']",0
+"Welcome to Marwen",2018,116,6.2,27000,3.9e+07,13061491,2354205,"['Biography', 'Comedy', 'Drama', 'Fantasy', 'Romance']","['Japan', 'United States', 'China']",8
+"Hotel Mumbai",2018,123,7.6,74000,17300000,21315827,88065,"['Action', 'Drama', 'History', 'Thriller']","['Australia', 'United States', 'United Kingdom', 'Singapore', 'India']",27
+"Midnight Sun",2018,91,6.6,38000,2800000,27365467,4003993,"['Coming-of-Age', 'Drama', 'Romance']","['United States']",0
+"Tully",2018,95,6.9,64000,1.3e+07,15636462,3282610,"['Comedy', 'Drama', 'Mystery']","['United States', 'Canada']",31
+"Traffik",2018,96,5.9,22000,4e+06,9515914,3941338,"['Action', 'Thriller']","['United States']",0
+"Unfriended: Dark Web",2018,92,6,40000,1e+06,16024987,3653035,"['Cyber Thriller', 'Found Footage Horror', 'Psychological Horror', 'Slasher Horror', 'Supernatural Horror', 'Teen Horror', 'Horror', 'Mystery', 'Thriller']","['United States', 'Russia']",0
+"Can You Ever Forgive Me?",2018,106,7.1,57000,1e+07,12442161,161510,"['True Crime', 'Biography', 'Comedy', 'Crime', 'Drama']","['United States']",102
+"Early Man",2018,89,6.1,24000,5e+07,54629139,3190525,"['Soccer', 'Stop Motion Animation', 'Adventure', 'Animation', 'Comedy', 'Family', 'Fantasy', 'Sport']","['United Kingdom', 'France', 'United States']",15
+"Unsane",2018,98,6.4,51000,1500000,14293601,3762145,"['Psychological Horror', 'Psychological Thriller', 'Drama', 'Horror', 'Mystery', 'Thriller']","['United States']",5
+"Beautiful Boy",2018,120,7.4,109000,2.5e+07,31749905,218888,"['Docudrama', 'Biography', 'Drama']","['United States']",31
+"Mid90s",2018,85,7.4,81000,1700000,9303022,258157,"['Coming-of-Age', 'Comedy', 'Drama']","['United States']",10
+"Dog Days",2018,113,6.2,5700,1e+07,6842356,2554766,"['Comedy', 'Drama', 'Romance']","['United States']",0
+"Boy Erased",2018,115,6.9,45000,1.1e+07,11853081,207057,"['Coming-of-Age', 'Psychological Drama', 'Teen Drama', 'Biography', 'Drama']","['Australia', 'United States', 'China']",52
+"Hotel Artemis",2018,94,6.1,60000,1.5e+07,13313581,3232790,"['Dark Comedy', 'Action', 'Crime', 'Drama', 'Sci-Fi', 'Thriller']","['United Kingdom', 'United States']",0
+"A-X-L",2018,98,5.3,14000,1e+07,8467697,2798229,"['Adventure', 'Drama', 'Family', 'Sci-Fi', 'Thriller']","['United States']",0
+"Run the Race",2018,101,6,1800,2500000,6424420,2161480,"['Football', 'Drama', 'Family', 'Sport']","['United States']",0
+"Fahrenheit 11/9",2018,128,7.2,21000,5e+06,6674168,3008563,"['Political Documentary', 'Documentary']","['United States']",7
+"Unbroken: Path to Redemption",2018,98,5.8,3600,6e+06,6216897,2238723,"['Biography', 'Drama', 'History']","['United States']",0
+"The Hurricane Heist",2018,103,5.1,23000,3.5e+07,32517273,3024399,"['Disaster', 'Action', 'Adventure', 'Crime', 'Thriller']","['United Kingdom', 'United States']",0
+"Every Day",2018,97,6.4,24000,4900000,10421847,3016149,"['Drama', 'Fantasy', 'Romance']","['United Kingdom', 'United States']",0
+"Death of a Nation",2018,108,4.1,7400,6e+06,5885881,2356522,"['Documentary', 'History']","['United States']",2
+"Kin",2018,102,5.8,19000,3e+07,10313019,3035618,"['Action', 'Drama', 'Sci-Fi', 'Thriller']","['United States', 'Canada']",0
+"Stan & Ollie",2018,98,7.2,41000,1e+07,24420923,78104,"['Biography', 'Comedy', 'Drama', 'Family', 'History']","['United Kingdom', 'Canada', 'United States']",30
+"Action Point",2018,85,5.1,12000,1.9e+07,5103663,2390164,"['Comedy']","['United States', 'South Africa']",0
+"Johnny English Strikes Again",2018,89,6.2,86000,2.5e+07,158972570,1638895,"['Parody', 'Slapstick', 'Action', 'Adventure', 'Comedy']","['United Kingdom', 'France', 'United States', 'China']",0
+"Brian Banks",2018,99,7.2,10000,1e+07,4376819,2156272,"['Football', 'Biography', 'Drama', 'Sport']","['United States']",2
+"Gotti",2018,112,4.8,18000,1e+07,6412349,1719902,"['True Crime', 'Biography', 'Crime', 'Drama']","['Canada', 'United States', 'United Kingdom']",0
+"Life Itself",2018,117,6.9,26000,1e+07,7997774,2123463,"['Drama', 'Romance']","['United States', 'Spain']",4
+"Replicas",2018,107,5.5,43000,3e+07,9330075,2375325,"['Action', 'Drama', 'Sci-Fi', 'Thriller']","['United States', 'United Kingdom', 'China', 'Puerto Rico']",0
+"Sgt. Stubby: An American Hero",2018,84,6.9,2700,2.5e+07,4932694,1164403,"['Computer Animation', 'Adventure', 'Animation', 'Family', 'History', 'War']","['Ireland', 'France', 'United States', 'Canada']",7
+"Ben Is Back",2018,103,6.7,25000,1.3e+07,10134204,80734,"['Drama']","['United States']",13
+"Indivisible",2018,119,5.9,1400,2700000,3589633,1503101,"['Drama', 'War']","['United States']",0
+"The Sisters Brothers",2018,122,6.9,72000,3.8e+07,13143056,115575,"['Period Drama', 'Drama', 'Western']","['France', 'Spain', 'Romania', 'Belgium', 'United States']",22
+"Suspiria",2018,152,6.7,98000,2e+07,7942093,184037,"['Psychological Horror', 'Supernatural Horror', 'Witch Horror', 'Drama', 'Fantasy', 'Horror', 'Mystery', 'Thriller']","['Italy', 'United States']",75
+"Arctic",2018,98,6.8,60000,2e+06,4165776,50878,"['Survival', 'Adventure', 'Drama']","['United States', 'Iceland']",0
+"Assassination Nation",2018,108,6,22000,7e+06,2584988,1050021,"['Dark Comedy', 'Teen Horror', 'Action', 'Comedy', 'Crime', 'Drama', 'Horror', 'Mystery', 'Thriller']","['United States', 'Canada']",4
+"Capernaum",2018,126,8.4,113000,4e+06,64417003,24988,"['Drama']","['Lebanon', 'United States', 'France', 'Cyprus', 'Qatar', 'United Kingdom']",55
+"A Private War",2018,110,6.7,22000,18800000,3915207,60491,"['Biography', 'Drama', 'War']","['United Kingdom', 'United States']",10
+"Destroyer",2018,121,6.2,33000,9e+06,5580940,55347,"['Action', 'Crime', 'Drama', 'Mystery', 'Thriller']","['United States']",20
+"El Chicano",2018,108,5.4,1700,8e+06,1404646,700261,"['Superhero', 'Action', 'Crime', 'Drama', 'Thriller']","['United States', 'Canada']",2
+"Mandy",2018,121,6.5,94000,6e+06,1764971,225723,"['Dark Fantasy', 'One-Person Army Action', 'Psychological Horror', 'Splatter Horror', 'Action', 'Fantasy', 'Horror']","['United Kingdom', 'Belgium', 'United States']",43
+"High Life",2018,113,5.7,43000,8e+06,2133033,99341,"['Drama', 'Horror', 'Sci-Fi', 'Thriller']","['France', 'United Kingdom', 'Germany', 'Poland', 'United States']",22
+"Little Italy",2018,102,5.7,18000,8e+06,1362536,283399,"['Romantic Comedy', 'Comedy', 'Romance']","['Canada', 'United States']",0
+"The Church",2018,81,2.7,203,1e+06,772000,272412,"['Horror', 'Thriller']","['United States']",0
+"Vox Lux",2018,114,5.8,20000,1.1e+07,1444547,155714,"['Drama', 'Music']","['United States']",11
+"The Catcher Was a Spy",2018,94,6.3,13000,1.4e+07,953953,114771,"['Biography', 'Drama', 'War']","['United States']",0
+"Blaze",2018,129,6.5,3800,1200000,704955,44050,"['Biography', 'Drama', 'Music']","['United States']",12
+"City of Lies",2018,112,6.5,21000,5e+07,2824459,284561,"['Police Procedural', 'Political Thriller', 'True Crime', 'Biography', 'Crime', 'Drama', 'Mystery', 'Thriller']","['United Kingdom', 'United States']",0
+"The Wedding Guest",2018,96,5.8,6900,5e+06,386166,18266,"['Action', 'Thriller']","['United States', 'United Kingdom']",0
+"Freaks",2018,105,6.7,42000,2000,368410,161543,"['Drama', 'Mystery', 'Sci-Fi', 'Thriller']","['United States', 'Canada']",15
+"London Fields",2018,118,3.9,13000,8e+06,487420,168575,"['Crime', 'Mystery', 'Thriller']","['United Kingdom', 'United States', 'United Arab Emirates']",0
+"Little Woods",2018,105,6.2,4200,1.1e+07,171912,57610,"['Crime', 'Drama', 'Western']","['United States']",6
+"Who Will Write Our History",2018,95,7.5,232,1500000,138868,13390,"['Documentary', 'History']","['United States']",0
+"The Times of Bill Cunningham",2018,74,6.8,133,3e+05,134288,41945,"['Documentary']","['United States']",0
+"Viper Club",2018,109,5.6,664,7500000,60607,14180,"['Drama']","['United States']",0
+"Barbie",2023,114,6.8,585000,1e+08,1446938421,162022044,"['High-Concept Comedy', 'Quirky Comedy', 'Satire', 'Adventure', 'Comedy', 'Fantasy']","['United States', 'United Kingdom']",433
+"The Super Mario Bros. Movie",2023,92,7,257000,1e+08,1360847665,146361865,"['Adventure Epic', 'Computer Animation', 'Fantasy Epic', 'Quest', 'Adventure', 'Animation', 'Comedy', 'Family', 'Fantasy']","['United States', 'Japan']",48
+"Spider-Man: Across the Spider-Verse",2023,140,8.5,428000,1.5e+08,690824738,120663589,"['Computer Animation', 'Superhero', 'Supernatural Fantasy', 'Teen Adventure', 'Urban Adventure', 'Action', 'Adventure', 'Animation', 'Family', 'Fantasy']","['United States']",164
+"Guardians of the Galaxy Vol. 3",2023,150,7.9,411000,2.5e+08,845555777,118414021,"['Space Sci-Fi', 'Superhero', 'Action', 'Adventure', 'Comedy', 'Sci-Fi']","['United States', 'New Zealand', 'France', 'Canada']",88
+"Oppenheimer",2023,180,8.3,834000,1e+08,975594978,82455420,"['Docudrama', 'Epic', 'Historical Epic', 'Period Drama', 'Psychological Drama', 'Biography', 'Drama', 'History']","['United States', 'United Kingdom']",369
+"The Little Mermaid",2023,135,7.2,163000,355100000,569626289,95578040,"['Fairy Tale', 'Feel-Good Romance', 'Sea Adventure', 'Teen Romance', 'Adventure', 'Family', 'Fantasy', 'Musical', 'Romance']","['United States']",31
+"Wonka",2023,116,7,169000,1.25e+08,634402312,39005800,"['Supernatural Fantasy', 'Adventure', 'Comedy', 'Family', 'Fantasy', 'Musical']","['United States', 'United Kingdom', 'Canada']",42
+"Ant-Man and the Wasp: Quantumania",2023,124,6,244000,2e+08,476071180,106109650,"['Superhero', 'Action', 'Adventure', 'Comedy', 'Sci-Fi']","['United States', 'Australia', 'Canada']",0
+"John Wick: Chapter 4",2023,169,7.6,363000,1e+08,440180275,73817950,"['Action Epic', 'Gun Fu', 'One-Person Army Action', 'Action', 'Crime', 'Thriller']","['United States', 'Germany']",47
+"Sound of Freedom",2023,131,7.6,126000,14600000,250570396,19680879,"['Docudrama', 'True Crime', 'Biography', 'Crime', 'Drama', 'History', 'Thriller']","['Mexico', 'United States']",4
+"Indiana Jones and the Dial of Destiny",2023,154,6.5,214000,387200000,383963057,60368101,"['Adventure Epic', 'Globetrotting Adventure', 'Time Travel', 'Action', 'Adventure', 'Sci-Fi']","['United States']",35
+"Mission: Impossible - Dead Reckoning Part One",2023,163,7.7,273000,2.91e+08,570619838,54688347,"['Action Epic', 'Adventure Epic', 'Spy', 'Action', 'Adventure', 'Thriller']","['United States']",67
+"The Hunger Games: The Ballad of Songbirds & Snakes",2023,157,6.7,150000,1e+08,348900019,44607143,"['Dystopian Sci-Fi', 'Teen Adventure', 'Action', 'Adventure', 'Drama', 'Sci-Fi', 'Thriller', 'War']","['United States', 'Canada']",27
+"Transformers: Rise of the Beasts",2023,127,6,117000,2e+08,441381193,61045464,"['Alien Invasion', 'Car Action', 'Action', 'Adventure', 'Sci-Fi']","['United States', 'Canada', 'United Kingdom', 'New Zealand', 'Hungary', 'Peru', 'China']",11
+"Creed III",2023,116,6.7,98000,7.5e+07,276148615,58370007,"['Boxing', 'Action', 'Drama', 'Sport']","['United States']",0
+"Elemental",2023,101,7,144000,2e+08,496444308,29602429,"['Computer Animation', 'Urban Adventure', 'Adventure', 'Animation', 'Comedy', 'Family', 'Fantasy', 'Romance']","['United States']",66
+"Fast X",2023,141,5.7,129000,3.4e+08,704875015,67017410,"['Action Epic', 'Car Action', 'Urban Adventure', 'Action', 'Adventure', 'Crime', 'Mystery', 'Thriller']","['United States', 'China', 'Japan']",15
+"Five Nights at Freddy's",2023,109,5.4,108000,2e+07,291493620,80001720,"['Supernatural Horror', 'Suspense Mystery', 'Horror', 'Mystery', 'Thriller']","['United States']",0
+"Migration",2023,83,6.6,38000,7e+07,299863204,12453275,"['Animal Adventure', 'Computer Animation', 'Adventure', 'Animation', 'Comedy', 'Family']","['United States']",7
+"Aquaman and the Lost Kingdom",2023,124,5.6,102000,2.05e+08,439381226,27686211,"['Action Epic', 'Superhero', 'Action', 'Adventure', 'Fantasy', 'Sci-Fi']","['United States', 'United Kingdom', 'Canada', 'Australia', 'Iceland']",6
+"Teenage Mutant Ninja Turtles: Mutant Mayhem",2023,99,7.2,71000,7e+07,181848832,28007544,"['Computer Animation', 'Hand-Drawn Animation', 'Superhero', 'Teen Adventure', 'Teen Comedy', 'Urban Adventure', 'Action', 'Adventure', 'Animation', 'Comedy']","['United States', 'Japan', 'Canada']",73
+"Scream VI",2023,122,6.4,132000,3.5e+07,166347514,44447270,"['Slasher Horror', 'Suspense Mystery', 'Teen Horror', 'Whodunnit', 'Horror', 'Mystery', 'Thriller']","['United States', 'Canada', 'United Kingdom']",27
+"The Flash",2023,144,6.6,227000,2e+08,271433313,55043679,"['Superhero', 'Supernatural Fantasy', 'Time Travel', 'Action', 'Adventure', 'Fantasy', 'Sci-Fi']","['United States', 'Canada', 'Australia', 'New Zealand']",7
+"Trolls Band Together",2023,91,6,17000,9.5e+07,209372790,30002525,"['Computer Animation', 'Adventure', 'Animation', 'Comedy', 'Family', 'Fantasy', 'Musical']","['United States', 'United Kingdom']",6
+"Dungeons & Dragons: Honor Among Thieves",2023,134,7.2,250000,1.5e+08,205187763,37205784,"['Quest', 'Sword & Sorcery', 'Action', 'Adventure', 'Comedy', 'Fantasy']","['United States', 'Canada', 'United Kingdom', 'Iceland', 'Ireland', 'Australia']",19
+"The Equalizer 3",2023,109,6.8,138000,7e+07,191067560,34604229,"['One-Person Army Action', 'Action', 'Crime', 'Thriller']","['United States', 'Italy', 'Australia']",0
+"Anyone But You",2023,103,6.1,133000,2.5e+07,220310798,6000344,"['Romantic Comedy', 'Comedy', 'Romance']","['Australia', 'United States']",4
+"The Nun II",2023,110,5.6,67000,3.8e+07,269667073,32603336,"['Supernatural Horror', 'Horror', 'Mystery', 'Thriller']","['United States']",12
+"The Marvels",2023,105,5.5,142000,2.2e+08,206136825,46110859,"['Superhero', 'Action', 'Adventure', 'Fantasy']","['United States']",11
+"Meg 2: The Trench",2023,116,5,89000,1.29e+08,397800317,30002735,"['Kaiju', 'Action', 'Adventure', 'Horror', 'Sci-Fi', 'Thriller']","['United States', 'China', 'Thailand', 'Germany', 'Canada', 'United Kingdom']",4
+"Insidious: The Red Door",2023,107,5.5,56000,1.6e+07,189086877,33013036,"['Supernatural Horror', 'Suspense Mystery', 'Horror', 'Mystery', 'Thriller']","['United States', 'Canada']",0
+"Blue Beetle",2023,127,5.9,105000,1.04e+08,130788072,25030225,"['Superhero', 'Action', 'Adventure', 'Sci-Fi', 'Thriller']","['United States', 'Mexico', 'Canada', 'Germany']",12
+"Killers of the Flower Moon",2023,206,7.6,270000,2e+08,158764012,23253655,"['Epic', 'Period Drama', 'Tragedy', 'True Crime', 'Western Epic', 'Crime', 'Drama', 'History', 'Mystery', 'Romance']","['United States']",425
+"Haunted Mansion",2023,123,6,46000,1.5e+08,117449790,24082475,"['Supernatural Fantasy', 'Supernatural Horror', 'Comedy', 'Drama', 'Family', 'Fantasy', 'Horror', 'Mystery']","['United States', 'Canada']",0
+"Evil Dead Rise",2023,96,6.5,151000,1.2e+07,147033054,24504315,"['Body Horror', 'Dark Comedy', 'Supernatural Horror', 'Zombie Horror', 'Horror']","['Ireland', 'New Zealand', 'United States']",32
+"The Exorcist: Believer",2023,111,4.8,45000,3e+07,136294607,26497600,"['Horror']","['United States']",22
+"PAW Patrol: The Mighty Movie",2023,88,5.9,5600,40387500,204986920,22764354,"['Computer Animation', 'Superhero', 'Urban Adventure', 'Action', 'Adventure', 'Animation', 'Comedy', 'Crime', 'Family', 'Fantasy']","['Canada', 'United States']",8
+"Cocaine Bear",2023,95,5.9,116000,3.5e+07,88314672,23260790,"['Dark Comedy', 'True Crime', 'Comedy', 'Crime', 'Thriller']","['United States', 'Netherlands', 'New Zealand', 'Ireland', 'United Kingdom']",10
+"Wish",2023,95,5.6,45000,2e+08,254997360,19698228,"['Computer Animation', 'Fairy Tale', 'Adventure', 'Animation', 'Comedy', 'Family', 'Fantasy', 'Musical']","['United States']",22
+"Napoleon",2023,158,6.3,165000,2e+08,221394838,20638887,"['Action Epic', 'Costume Drama', 'Docudrama', 'Epic', 'Historical Epic', 'Period Drama', 'War Epic', 'Action', 'Adventure', 'Biography']","['United States', 'United Kingdom']",44
+"The Color Purple",2023,141,6.8,18000,1e+08,68819191,11737072,"['Drama', 'Musical']","['United States']",109
+"Shazam! Fury of the Gods",2023,130,5.9,133000,1.25e+08,134138006,30111158,"['Superhero', 'Adventure', 'Comedy', 'Fantasy', 'Sci-Fi']","['United States', 'Germany', 'New Zealand', 'United Kingdom', 'India', 'South Korea', 'Canada']",0
+"Saw X",2023,118,6.6,86000,1.3e+07,112202480,18309301,"['Body Horror', 'Splatter Horror', 'Horror', 'Mystery', 'Thriller']","['United States', 'Mexico', 'Canada']",0
+"The Boys in the Boat",2023,123,7,26000,4e+07,55501365,8400548,"['Coming-of-Age', 'Docudrama', 'Water Sport', 'Biography', 'Drama', 'Sport']","['United States']",3
+"Air",2023,111,7.4,179000,9e+07,90060106,14456279,"['Basketball', 'Docudrama', 'Period Drama', 'Drama', 'Sport']","['United States']",47
+"No Hard Feelings",2023,103,6.4,184000,4.5e+07,87256407,15002770,"['Raunchy Comedy', 'Romantic Comedy', 'Teen Comedy', 'Teen Romance', 'Comedy', 'Romance']","['United States']",10
+"Gran Turismo",2023,134,7.1,115000,6e+07,122076738,17410552,"['Car Action', 'Motorsport', 'Action', 'Adventure', 'Drama', 'Sport']","['Japan', 'United States']",0
+"The Boogeyman",2023,98,5.9,48000,3.5e+07,67307243,12356486,"['Supernatural Horror', 'Horror', 'Mystery', 'Thriller']","['United States', 'Canada']",0
+"A Haunting in Venice",2023,103,6.5,126000,6e+07,122290456,14279529,"['Psychological Horror', 'Psychological Thriller', 'Whodunnit', 'Crime', 'Drama', 'Horror', 'Mystery', 'Thriller']","['United States']",4
+"The Creator",2023,133,6.7,178000,8e+07,104272136,14079512,"['Action Epic', 'Adventure Epic', 'Artificial Intelligence', 'Cyberpunk', 'Dystopian Sci-Fi', 'Sci-Fi Epic', 'Action', 'Adventure', 'Drama', 'Sci-Fi']","['United States']",47
+"80 for Brady",2023,98,5.9,13000,2.8e+07,40362938,12701640,"['Football', 'Comedy', 'Drama', 'Sport']","['United States']",2
+"Knock at the Cabin",2023,100,6.1,130000,2e+07,54760947,14127170,"['Psychological Thriller', 'Horror', 'Mystery', 'Thriller']","['United States', 'Japan', 'China']",0
+"The Iron Claw",2023,132,7.6,97000,1.5e+07,45204449,4868370,"['Docudrama', 'Tragedy', 'Biography', 'Drama', 'Sport']","['United Kingdom', 'United States']",39
+"Poor Things",2023,141,7.8,320000,3.5e+07,117625455,661230,"['Dark Comedy', 'Steampunk', 'Comedy', 'Drama', 'Romance', 'Sci-Fi']","['Ireland', 'United Kingdom', 'United States', 'Hungary']",414
+"Missing",2023,111,7.1,65000,7e+06,48767848,9154695,"['Psychological Thriller', 'Drama', 'Mystery', 'Thriller']","['United States', 'Russia']",0
+"Plane",2023,107,6.5,87000,2.5e+07,74515586,10265326,"['One-Person Army Action', 'Quest', 'Survival', 'Action', 'Adventure', 'Thriller']","['United Kingdom', 'United States', 'Puerto Rico']",0
+"65",2023,93,5.4,97000,4.5e+07,60730568,12328361,"['Dinosaur Adventure', 'Survival', 'Action', 'Adventure', 'Sci-Fi', 'Thriller']","['United States', 'Ireland', 'Australia', 'Canada']",0
+"Thanksgiving",2023,106,6.2,67000,1.5e+07,46553280,10306272,"['Slasher Horror', 'Teen Horror', 'Horror', 'Mystery', 'Thriller']","['United States', 'Canada', 'Australia']",12
+"Asteroid City",2023,105,6.5,126000,2.5e+07,53857743,853382,"['Quirky Comedy', 'Showbiz Drama', 'Comedy', 'Drama', 'Romance', 'Sci-Fi']","['United States']",85
+"Magic Mike's Last Dance",2023,112,5.2,18000,4e+07,57105156,8305317,"['Showbiz Drama', 'Comedy', 'Drama']","['United States']",0
+"The Bikeriders",2023,116,6.7,58000,4e+07,36092911,9698275,"['Gangster', 'Period Drama', 'Crime', 'Drama']","['United States']",9
+"Priscilla",2023,113,6.5,44000,2e+07,33111706,132139,"['Coming-of-Age', 'Dark Romance', 'Docudrama', 'Period Drama', 'Showbiz Drama', 'Teen Romance', 'Biography', 'Drama', 'Music', 'Romance']","['Italy', 'United States']",35
+"Are You There God? It's Me, Margaret.",2023,106,7.3,32000,3e+07,21464043,6739037,"['Coming-of-Age', 'Comedy', 'Drama', 'Family']","['United States']",82
+"The Pope's Exorcist",2023,103,6.1,92000,1.8e+07,76987621,9006368,"['Supernatural Horror', 'Horror', 'Thriller']","['United States', 'Spain', 'United Kingdom']",3
+"Ferrari",2023,130,6.4,60000,1.1e+08,43332974,3921773,"['Docudrama', 'Motorsport', 'Biography', 'Drama', 'History', 'Sport']","['United States', 'United Kingdom', 'Italy', 'Saudi Arabia']",39
+"Book Club: The Next Chapter",2023,107,5.6,8100,2e+07,29014500,6677580,"['Romantic Comedy', 'Comedy', 'Romance']","['United States']",0
+"Renfield",2023,93,6.4,106000,6.5e+07,26493921,8026475,"['Dark Comedy', 'Splatter Horror', 'Vampire Horror', 'Action', 'Comedy', 'Fantasy', 'Horror']","['United States', 'United Kingdom', 'Canada']",12
+"Guy Ritchie's the Covenant",2023,123,7.5,181000,5.5e+07,21948551,6380188,"['Action Epic', 'Action', 'Drama', 'Thriller', 'War']","['United Kingdom', 'Spain', 'United States']",3
+"The Expendables 4",2023,103,4.8,47000,1e+08,37917985,8039021,"['Action Epic', 'Action', 'Adventure', 'Thriller', 'War']","['United States']",7
+"Ruby Gillman: Teenage Kraken",2023,91,5.7,12000,7e+07,45657745,5500990,"['Computer Animation', 'Teen Comedy', 'Teen Drama', 'Action', 'Adventure', 'Animation', 'Comedy']","['United States']",3
+"Dumb Money",2023,105,6.9,54000,3e+07,20703794,220947,"['Docudrama', 'Biography', 'Comedy', 'Drama', 'Financial Drama']","['United States']",2
+"The Last Voyage of the Demeter",2023,118,6.1,60000,4.5e+07,21786275,6504950,"['Dark Fantasy', 'Supernatural Horror', 'Vampire Horror', 'Fantasy', 'Horror', 'Thriller']","['United States', 'United Kingdom', 'Canada', 'India', 'Germany']",10
+"His Only Son",2023,106,5.9,2700,250000,13817186,5501070,"['Drama', 'History']","['United States']",0
+"About My Father",2023,90,5.7,15000,3e+07,18167819,4321148,"['Comedy']","['United States']",0
+"Past Lives",2023,105,7.8,141000,1.2e+07,42530801,232266,"['Korean Drama', 'Drama', 'Romance']","['United States', 'South Korea']",232
+"The Machine",2023,112,5.7,17000,2e+07,10664328,5000545,"['Action', 'Comedy']","['United States', 'Serbia']",0
+"Beau Is Afraid",2023,179,6.7,68000,3.5e+07,12337378,320396,"['Dark Comedy', 'Psychological Drama', 'Psychological Horror', 'Quest', 'Tragedy', 'Comedy', 'Drama', 'Horror']","['United States', 'United Kingdom', 'Finland', 'Canada']",0
+"Silent Night",2023,104,5.3,24000,1e+07,11067228,3010207,"['One-Person Army Action', 'Action', 'Thriller']","['United States', 'Mexico']",0
+"Retribution",2023,91,5.3,24000,2e+07,18685751,3518830,"['Car Action', 'Action', 'Thriller']","['France', 'Germany', 'Spain', 'United States', 'Canada']",0
+"Journey to Bethlehem",2023,99,6.4,3100,6e+06,7778330,2400446,"['Adventure', 'Family', 'Holiday', 'Musical', 'Romance']","['United States']",0
+"Next Goal Wins",2023,104,6.5,28000,1.4e+07,18648802,2500295,"['Football', 'Soccer', 'Comedy', 'Drama', 'Sport']","['United Kingdom', 'United States', 'New Zealand']",0
+"I.S.S.",2023,95,5.3,11000,2e+07,6605079,3064583,"['Psychological Thriller', 'Space Sci-Fi', 'Sci-Fi', 'Thriller']","['United States']",0
+"Operation Fortune: Ruse de Guerre",2023,114,6.3,97000,5e+07,48983306,3140214,"['Spy', 'Action', 'Comedy', 'Thriller']","['United Kingdom', 'United States', 'China', 'Indonesia', 'Turkey']",0
+"Big George Foreman",2023,129,6.6,10000,3.2e+07,6031202,2925364,"['Docudrama', 'Biography', 'Drama', 'Sport']","['United States']",0
+"Freelance",2023,108,5.5,24000,4e+07,10196704,2086000,"['Action', 'Comedy']","['United States', 'Colombia', 'United Kingdom']",0
+"White Bird",2023,121,7.3,4200,4e+07,8799528,1557893,"['Biography', 'Drama', 'Family', 'War']","['United States']",0
+"Origin",2023,141,7.2,6800,3.8e+07,4837596,117063,"['Drama', 'History']","['United States']",30
+"Hypnotic",2023,93,5.5,40000,7e+07,16281937,2401686,"['Conspiracy Thriller', 'Psychological Thriller', 'Action', 'Drama', 'Mystery', 'Sci-Fi', 'Thriller']","['United States', 'United Kingdom', 'Canada']",0
+"Strange Darling",2023,97,7.1,37000,4e+06,3782220,1142928,"['Erotic Thriller', 'Psychological Thriller', 'Horror', 'Thriller']","['United States']",15
+"Winnie-the-Pooh: Blood and Honey",2023,84,2.9,33000,1e+05,7717044,652482,"['Monster Horror', 'Slasher Horror', 'Horror']","['United Kingdom', 'United States']",0
+"Dicks: The Musical",2023,86,5.3,3600,1.2e+07,1472114,201951,"['Comedy', 'Musical']","['United States']",5
+"Eileen",2023,97,5.9,16000,1.6e+07,1673665,93290,"['Period Drama', 'Prison Drama', 'Psychological Drama', 'Psychological Thriller', 'Workplace Drama', 'Drama', 'Mystery', 'Romance', 'Thriller']","['United States', 'United Kingdom', 'South Korea']",8
+"Maybe I Do",2023,95,5,10000,7500000,4450096,546060,"['Comedy', 'Romance']","['United States']",0
+"Knights of the Zodiac",2023,112,4.4,15000,6e+07,6986177,557533,"['Martial Arts', 'Superhero', 'Action', 'Adventure', 'Drama', 'Fantasy', 'Sci-Fi']","['United States', 'Japan', 'Hungary']",0
+"The Royal Hotel",2023,91,5.8,13000,1e+07,1366715,331010,"['Psychological Thriller', 'Thriller']","['Australia', 'United Kingdom', 'United States']",22
+"Sweetwater",2023,118,6,1400,8e+06,541633,351010,"['Basketball', 'Docudrama', 'Biography', 'Drama', 'Sport']","['United States']",3
+"Memory",2023,103,6.7,8000,1e+05,2036166,36356,"['Drama']","['Mexico', 'United States', 'Chile', 'Germany']",5
+"The Inventor",2023,100,5.7,750,1e+07,2055868,190031,"['Stop Motion Animation', 'Adventure', 'Animation', 'Comedy', 'Family']","['United States', 'France', 'Ireland', 'Iran']",3
+"I Can",2023,85,6.6,1700,1e+05,233110,140005,"['Drama', 'Family', 'Sport']","['United States']",4
+"On Fire",2023,80,5.2,1600,4e+06,245325,134825,"['Drama', 'Mystery', 'Thriller']","['United States']",0
+"The Kill Room",2023,98,5.5,8000,6500000,994105,82891,"['Comedy', 'Thriller']","['United States']",0
+"Malibu Horror Story",2023,83,4.7,2100,1e+06,118281,78234,"['Found Footage Horror', 'Teen Horror', 'Horror', 'Thriller']","['United States']",0
+"DogMan",2023,115,6.8,18000,2.1e+07,4182673,25131,"['Action', 'Crime', 'Drama', 'Thriller']","['France', 'United States']",4
+"They Shot the Piano Player",2023,104,6.6,812,6216000,381821,6734,"['Animation', 'Drama', 'History']","['Spain', 'France', 'Netherlands', 'Portugal', 'Peru', 'United Kingdom', 'United States', 'Brazil']",0
+"My Happy Ending",2023,89,5.4,499,1500000,59329,26572,"['Quirky Comedy', 'Comedy', 'Drama']","['United Kingdom', 'Israel', 'United States']",0
+"Full Circle",2023,103,7.4,191,450000,29767,1654,"['Documentary', 'Sport']","['United States']",0
+"Kensuke's Kingdom",2023,85,7,809,10945388,3223707,13844,"['Adventure', 'Animation']","['United Kingdom', 'Luxembourg', 'France', 'United States']",6
