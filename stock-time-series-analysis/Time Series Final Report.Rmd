@@ -1,0 +1,738 @@
+---
+title: "National Stock Exchange: Time Series Analysis"
+date: "`r Sys.Date()`"
+output: pdf_document
+fontsize: 12pt
+geometry: margin=1in
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+\thispagestyle{empty}
+
+```{r, message=FALSE, include=FALSE}
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+library(knitr)
+library(tseries)
+library(forecast)
+library(patchwork)
+library(FinTS)
+library(rugarch)
+stock_data <- read.csv("infy_stock.csv")
+open_stock <- stock_data %>% select(Date, Open)
+```
+
+
+# Abstract
+
+\
+\
+
+This study analyzes the time series behavior of stock prices using the `Open` variable from the National Stock Exchange dataset obtained from Kaggle. The primary objective is to model and forecast stock price movements by applying statistical time series techniques, with a focus on Seasonal Autoregressive Integrated Moving Average (SARIMA) models. The dataset consists of daily stock price observations, providing a structured framework to examine trends, seasonality, and volatility over time.
+
+Initial exploratory analysis is conducted to identify patterns such as long-term trends and potential seasonal components in the opening prices. The data is then transformed, if necessary, to achieve stationarity, and autocorrelation structures are examined using ACF and PACF plots. Based on these insights, appropriate SARIMA model parameters are selected and estimated. Model performance is evaluated using diagnostic checks and information criteria to ensure a good fit.
+
+In addition to SARIMA, a secondary method, GARCH, is applied to compare forecasting performance and provide additional insights into the data’s structure. The results highlight the effectiveness of time series modeling in capturing underlying dynamics in stock prices and demonstrate the strengths and limitations of each approach. Overall, this study provides a practical application of time series analysis techniques for financial data and contributes to understanding stock price behavior through statistical modeling.
+
+\vfill
+
+**Name:** Matthew Arteaga  
+**Email:** matthewarteaga@ucsb.edu
+
+\newpage
+
+# 1. Introduction
+
+\
+\
+
+Financial markets generate large amounts of time-dependent data, making them a natural setting for time series analysis. In this project, I analyze stock price behavior using the `Open` price from a National Stock Exchange dataset obtained from Kaggle. The goal of this study is to understand the underlying patterns in stock prices, such as trends, seasonality, and randomness, and to build models that can effectively capture and forecast these dynamics.
+
+I chose this topic because financial data is both highly relevant and widely studied, and it provides a practical application of statistical modeling techniques. The dataset was selected due to its high frequency (daily observations) and real-world significance, allowing for meaningful analysis of how stock prices evolve over time. Understanding these patterns is important not only for academic purposes but also for applications in finance such as forecasting and decision-making.
+
+Time series analysis of stock prices has been extensively studied in the literature. Traditional approaches often focus on models such as ARIMA and its seasonal extension, SARIMA, to capture autocorrelation and seasonal behavior in financial data. While stock prices are often considered difficult to predict due to their inherent volatility and potential randomness, prior studies have shown that certain statistical structures can still be identified and modeled, particularly over short time horizons or when seasonality is present.
+
+In this project, I apply a Seasonal Autoregressive Integrated Moving Average (SARIMA) model to analyze the time series properties of the opening stock prices. This includes identifying appropriate differencing to achieve stationarity, examining autocorrelation patterns using ACF and PACF plots, and selecting model parameters based on diagnostic criteria. In addition to SARIMA, a secondary method, GARCH, is implemented to compare performance and provide additional insight into the data.
+
+Preliminary analysis of the dataset suggests that the stock prices exhibit noticeable trends over time, along with periods of increased volatility. After appropriate transformations, the data shows patterns that can be effectively captured by time series models, indicating that despite the noisy nature of financial data, there is still structure that can be leveraged for modeling and forecasting. These findings highlight both the potential and the limitations of statistical methods when applied to financial markets.
+
+\newpage
+
+# 2. Data
+
+\
+\
+
+The dataset provided is the one year record for the `Open` price (Indian Rupees) of the INFOSYS (a highly rated IT service company) stocks on the National Stock Exchange from the year 2015. The National Stock Exchange of India Ltd. (NSE) is an Indian stock exchange located at Mumbai, Maharashtra, India; it was established in 1992 as a demutualized electronic exchange and stands as India's largest exchange by turnover. The time range of the dataset is from January 1st 2015 to December 31st 2015, with 248 observations as these values were only recorded on business days (Monday through Friday), when trading occurred. As stated previously, this data was chosen for its relevancy in modern financial markets, it's practical applications in statistical modeling methods, as well for it's sample size. The data was collected by Atul Anand (last updated 6 years ago), using the NSEpy api to fetch the data directly from the NSE website. This data is important because it allows us to identify trends for companies like INFOSYS on the NSE and use that information in an attempt to forecast it's future values using statiscal modeling methods like SARIMA, as mentioned. 
+
+\
+
+**Kaggle:** https://www.kaggle.com/datasets/atulanandjha/national-stock-exchange-time-series
+
+\
+
+```{r, message=FALSE, echo=FALSE}
+head <- head(open_stock, 10)
+kable(head, caption="First 10 Days of Trading")
+```
+
+
+\newpage
+
+# 3. Methodology
+
+\
+
+This study applies time series modeling techniques to analyze the behavior of stock opening prices. The analysis focuses on modeling both the underlying structure of the series and its variability over time. A Seasonal Autoregressive Integrated Moving Average (SARIMA) model is used to capture patterns in the conditional mean, while a Generalized Autoregressive Conditional Heteroskedasticity (GARCH) model is used to account for time-varying volatility commonly observed in financial data.
+
+\
+
+## 3.1 SARIMA $(p,d,q) \times (P,D,Q)$ Model
+
+The SARIMA model is used to model the mean behavior of the time series, accounting for both non-seasonal and seasonal components. The model incorporates autoregressive (AR) terms, differencing to achieve stationarity (I), and moving average (MA) terms, along with their seasonal counterparts.
+
+Prior to model estimation, the data is examined for stationarity and transformed if necessary through differencing and logarithmic scaling. Autocorrelation (ACF) and partial autocorrelation (PACF) plots are used to guide the selection of appropriate model orders. Model selection is further supported by information criteria such as AIC. The SARIMA framework allows for capturing trends and potential seasonal patterns in the stock price series.
+
+## 3.2 GARCH Model
+
+To complement the analysis of the mean structure, a GARCH model is applied to the log returns of the stock prices in order to model time-varying volatility. Financial time series data often exhibit volatility clustering, where periods of high variability, and similarly for low variability.
+
+The GARCH model specifies the conditional variances as a function of past squared residuals and past variances, allowing the model to capture persistence in volatility over time. This approach provides insight into the dynamic risk associated with the time series and serves as a complement to the SARIMA model, which focuses on the conditional mean.
+
+\newpage
+
+# 4. Results
+
+## 4.1 Results from SARIMA $(p,d,q) \times (P,D,Q)$
+
+
+```{r, message=FALSE, echo=FALSE, fig.width=6, fig.height=2.5}
+open_stock$Date <- as.Date(open_stock$Date)
+ggplot(open_stock, aes(x = Date, y = Open)) +
+  geom_line(linewidth = 0.6) +
+  labs(
+    title = "Opening Stock Price Over Time",
+    x = "Date",
+    y = "Open Price"
+  ) +
+  theme_minimal(base_size = 11) +
+  theme(
+    plot.title = element_text(face = "bold", hjust = 0.5),
+    axis.title = element_text(face = "bold"),
+    panel.grid.minor = element_blank()
+  )
+
+pval <- adf.test(open_stock$Open)$p.value
+lambda <- BoxCox.lambda(open_stock$Open)
+```
+
+
+The plot of the opening stock prices shows clear non-stationarity, with noticeable changes in both level and variability over time. In particular, there is a sharp structural break around mid-2015, where prices drop significantly and then stabilize at a lower level. The Augmented Dickey-Fuller (ADF) Test confirms this non-stationarity, producing a p-value of `r pval`. This shift suggests the influence of an external event and indicates that the series does not have a constant mean. As a result, transformations such as differencing will be required before applying time series models.
+
+A Box-Cox analysis was conducted to assess whether a variance-stabilizing transformation was needed. The estimated lambda was approximately 2, suggesting that a logarithmic transformation was not necessary. However, due to common practice of analyzing financial time series in relative changes, both first differencing of the raw series and first differencing of the logged series were considered.
+
+
+```{r, message=FALSE, echo=FALSE, warning=FALSE, fig.width=6, fig.height=2.5}
+library(dplyr)
+
+diff_open <- diff(open_stock$Open)
+diff_log_open <- diff(log(open_stock$Open))
+
+open_stock <- open_stock %>%
+  arrange(Date) %>%
+  mutate(
+    diff_open = c(NA, diff(Open)),
+    diff_log_open = c(NA, diff(log(Open)))
+  )
+
+plot_data <- open_stock %>%
+  select(Date, diff_open, diff_log_open) %>%
+  pivot_longer(
+    cols = c(diff_open, diff_log_open),
+    names_to = "Series",
+    values_to = "Value"
+  )
+
+ggplot(plot_data, aes(x = Date, y = Value)) +
+  geom_line(linewidth = 0.5) +
+  facet_wrap(~ Series, ncol = 2, scales = "free_y") +
+  labs(
+    title = "Comparison of Transformed Series",
+    x = "Date",
+    y = "Value"
+  ) +
+  scale_x_date(date_breaks = "1 year", date_labels = "%Y") +
+  theme_minimal(base_size = 11) +
+  theme(
+    plot.title = element_text(face = "bold", hjust = 0.5),
+    axis.title = element_text(face = "bold"),
+    strip.text = element_text(face = "bold"),
+    panel.grid.minor = element_blank()
+  )
+```
+
+\newpage
+
+The transformed series are shown above for comparison. Both transformations remove the trend and produce series that fluctuate around a constant mean. The differenced log series appears slightly more stable in variance, which is consistent with standard practice in financial time series analysis. However, both transformations yield stationary behavior, and the final choice is based on model diagnostics.
+
+## ACF & PACF Analysis
+
+```{r, message=FALSE, echo=FALSE, warning=FALSE, fig.width=6, fig.height=4}
+acf_diff <- ggAcf(diff_open) +
+  ggtitle("ACF: Diff(Open)") +
+  theme_minimal(base_size = 11)
+
+pacf_diff <- ggPacf(diff_open) +
+  ggtitle("PACF: Diff(Open)") +
+  theme_minimal(base_size = 11)
+
+acf_logdiff <- ggAcf(diff_log_open) +
+  ggtitle("ACF: Diff(log(Open))") +
+  theme_minimal(base_size = 11)
+
+pacf_logdiff <- ggPacf(diff_log_open) +
+  ggtitle("PACF: Diff(log(Open))") +
+  theme_minimal(base_size = 11)
+
+(acf_diff + pacf_diff) /
+(acf_logdiff + pacf_logdiff)
+```
+
+The ACF and PACF plots for both the differenced series and the differenced log series show very similar behavior. In both cases, the autocorrelations are small in magnitude and lie mostly within the confidence bounds, with no clear significant spikes at specific lags. This suggests that the transformations have successfully removed the non-stationarity present in the original series.
+
+For both transformed series, the ACF does not display a slow decay, and the PACF does not exhibit a sharp cutoff at any particular lag. Instead, both functions appear to fluctuate randomly around zero, indicating a lack of strong serial dependence. This pattern is consistent with a process that is close to white noise.
+
+From a modeling perspective, these results suggest that only low-order models are appropriate. In particular, there is no strong evidence for higher-order autoregressive or moving average components. This indicates that simple models such as ARIMA(0,1,0), ARIMA(1,1,0), or ARIMA(0,1,1) are likely sufficient to capture the underlying structure of the data.
+
+\newpage
+
+Additionally, there are no clear seasonal spikes at regular intervals, suggesting that a seasonal component may not be necessary in the SARIMA specification.
+
+Overall, the similarity between the two sets of plots indicates that both transformations produce stationary series with minimal autocorrelation. The final model choice can therefore be guided by model selection criteria and diagnostic checks rather than strong signals from the ACF and PACF alone.
+
+## Model Estimation
+
+```{r, message=FALSE, echo=FALSE, warning=FALSE, include=FALSE}
+fit_diff <- auto.arima(diff_open)
+fit_diff_log <- auto.arima(diff_log_open)
+
+summary(fit_diff)
+summary(fit_diff_log)
+```
+The `auto.arima` procedure applied to both the differenced series and the differenced log series selected an ARIMA(0,0,0) model with zero mean. Since the data had already been differenced prior to model estimation, this corresponds to an ARIMA(0,1,0) model for the original series. This result indicates that, after removing the trend, the series behaves like white noise with no significant autoregressive or moving average components. This finding is consistent with the ACF and PACF plots, which showed no strong autocorrelation structure. The resulting model suggests that the stock price follows a random walk process, a common characteristic of financial time series.
+
+## Diagnostics
+
+```{r, message=FALSE, echo=FALSE, warning=FALSE, fig.width=7, fig.height=5}
+create_diag_plots <- function(fit, label) {
+  
+  res <- residuals(fit)
+  
+  common_theme <- theme_minimal(base_size = 9) +
+    theme(
+      plot.title = element_text(face = "bold", hjust = 0.5, size = 9),
+      axis.title = element_text(size = 8),
+      axis.text = element_text(size = 7),
+      panel.grid.minor = element_blank(),
+      plot.margin = margin(5, 5, 5, 5)
+    )
+  
+  p1 <- autoplot(res) +
+    ggtitle("Residuals") +
+    common_theme
+  
+  p2 <- ggAcf(res) +
+    ggtitle("ACF") +
+    common_theme
+  
+  p3 <- ggplot(data.frame(res), aes(x = res)) +
+    geom_histogram(bins = 25, fill = "gray70", color = "black") +
+    ggtitle("Histogram") +
+    xlab("") +
+    common_theme
+  
+  p4 <- ggplot(data.frame(res), aes(sample = res)) +
+    stat_qq() +
+    stat_qq_line() +
+    ggtitle("Q-Q Plot") +
+    common_theme
+  
+  # Add label as a subtitle instead of cluttering titles
+  ((p1 + p2) / (p3 + p4)) +
+    plot_annotation(title = label)
+}
+
+diag_diff <- create_diag_plots(fit_diff, "Diff(Open)")
+diag_log <- create_diag_plots(fit_diff_log, "Diff(log(Open))")
+
+diag_diff | diag_log
+```
+
+The diagnostic plots indicate that the residuals from both models behave approximately like white noise, with no significant autocorrelation remaining, as shown by the ACF plots. The residual series does not exhibit any clear patterns, suggesting that the model has adequately captured the structure of the data. While the histogram and Q-Q plot reveal some deviations from normality and the presence of outliers, this is typical for financial time series. Overall, the results support the adequacy of the ARIMA(0,1,0) model.
+
+## 4.2 Results from GARCH
+
+Although the ARIMA(0,1,0) model provides an adequate fit for the conditional mean of the stock price series, the diagnostic plots suggest the presence of several unusually large residuals. In financial time series, it is common for variability to change over time rather than remain constant. As a result, it is useful to complement the SARIMA analysis with a volatility model. To capture this feature, a GARCH model is applied to the return series in order to examine whether the data exhibits time-varying variance and volatility clustering.
+
+Log returns are used rather than price levels because they are typically stationary and better capture relative changes in prices, making them more suitable for modeling time-varying volatility with GARCH models. 
+
+\
+
+```{r, message=FALSE, echo=FALSE, warning=FALSE, fig.width=7, fig.height=3.5}
+log_returns <- diff(log(open_stock$Open))
+log_returns <- na.omit(log_returns)
+
+returns_df <- data.frame(
+  Date = open_stock$Date[-1],
+  Log_Return = as.numeric(log_returns)
+)
+
+ggplot(returns_df, aes(x = Date, y = Log_Return)) +
+  geom_line(linewidth = 0.5) +
+  labs(
+    title = "Log Returns Over Time",
+    x = "Date",
+    y = "Log Return"
+  ) +
+  scale_x_date(date_breaks = "1 year", date_labels = "%Y") +
+  theme_minimal(base_size = 11) +
+  theme(
+    plot.title = element_text(face = "bold", hjust = 0.5),
+    axis.title = element_text(face = "bold"),
+    panel.grid.minor = element_blank()
+  )
+```
+
+## ACF of returns and squared returns
+
+```{r, message=FALSE, echo=FALSE, warning=FALSE, fig.width=6, fig.height=3}
+p1 <- ggAcf(log_returns) +
+  ggtitle("ACF: Log Returns") +
+  theme_minimal(base_size = 10) +
+  theme(
+    plot.title = element_text(face = "bold", hjust = 0.5),
+    panel.grid.minor = element_blank()
+  )
+
+p2 <- ggAcf(log_returns^2) +
+  ggtitle("ACF: Squared Log Returns") +
+  theme_minimal(base_size = 10) +
+  theme(
+    plot.title = element_text(face = "bold", hjust = 0.5),
+    panel.grid.minor = element_blank()
+  )
+
+p1 | p2
+```
+
+The ACF of the log returns shows no significant autocorrelation, indicating that the return series behaves approximately like white noise in the mean. Similarly, the ACF of the squared log returns does not exhibit strong or persistent spikes, suggesting limited evidence of volatility clustering. These results imply that conditional heteroskedasticity is not strongly present in the data, and any GARCH effects are likely to be weak. Additionally, the ARCH test yielded a p-value of 1, suggesting no significant evidence of conditional heteroskedasticity.
+
+## Fitting GARCH(1,1)
+
+```{r, message=FALSE, echo=FALSE, warning=FALSE, fig.width=6, fig.height=3}
+spec <- ugarchspec(
+  variance.model = list(model = "sGARCH", garchOrder = c(1,1)),
+  mean.model = list(armaOrder = c(0,0), include.mean = FALSE),
+  distribution.model = "norm"
+)
+
+fit_garch <- ugarchfit(spec = spec, data = log_returns)
+
+vol_df <- data.frame(
+  Date = open_stock$Date[-1],
+  Volatility = as.numeric(sigma(fit_garch))
+)
+
+ggplot(vol_df, aes(x = Date, y = Volatility)) +
+  geom_line(linewidth = 0.5) +
+  labs(
+    title = "Estimated Conditional Volatility from GARCH(1,1)",
+    x = "Date",
+    y = "Conditional Volatility"
+  ) +
+  scale_x_date(date_breaks = "1 year", date_labels = "%Y") +
+  theme_minimal(base_size = 11) +
+  theme(
+    plot.title = element_text(face = "bold", hjust = 0.5),
+    axis.title = element_text(face = "bold"),
+    panel.grid.minor = element_blank()
+  )
+```
+
+\newpage
+
+## Conditional volatility
+
+The estimated conditional volatility from the GARCH(1,1) model shows a sharp spike at the beginning of the sample period, followed by a rapid decline and stabilization at a relatively low and constant level. This suggests that while there may have been a brief period of elevated volatility, the overall variance of the return series remains fairly stable over time. The absence of persistent fluctuations in the volatility indicates limited evidence of volatility clustering, which is consistent with the earlier ACF analysis of squared returns and the results of the ARCH test. Overall, the GARCH model does not reveal strong time-varying volatility in this dataset.
+
+## Diagnostics
+
+### Residual plot, ACF, histogram, Q-Q
+
+```{r, message=FALSE, echo=FALSE, warning=FALSE, fig.width=5.5, fig.height=2.5}
+std_resid <- residuals(fit_garch, standardize = TRUE)
+std_resid <- as.numeric(std_resid)
+
+g1 <- autoplot(ts(std_resid)) +
+  ggtitle("Standardized Residuals") +
+  theme_minimal(base_size = 9) +
+  theme(plot.title = element_text(face = "bold", hjust = 0.5),
+        panel.grid.minor = element_blank())
+
+g2 <- ggAcf(std_resid) +
+  ggtitle("ACF: Standardized Residuals") +
+  theme_minimal(base_size = 9) +
+  theme(plot.title = element_text(face = "bold", hjust = 0.5),
+        panel.grid.minor = element_blank())
+
+g3 <- ggplot(data.frame(std_resid), aes(x = std_resid)) +
+  geom_histogram(bins = 25, fill = "gray70", color = "black") +
+  ggtitle("Histogram") +
+  theme_minimal(base_size = 9) +
+  theme(plot.title = element_text(face = "bold", hjust = 0.5),
+        panel.grid.minor = element_blank())
+
+g4 <- ggplot(data.frame(std_resid), aes(sample = std_resid)) +
+  stat_qq() +
+  stat_qq_line() +
+  ggtitle("Q-Q Plot") +
+  theme_minimal(base_size = 9) +
+  theme(plot.title = element_text(face = "bold", hjust = 0.5),
+        panel.grid.minor = element_blank())
+
+(g1 + g2) / (g3 + g4)
+```
+
+### Squared standardized residuals
+
+```{r, message=FALSE, echo=FALSE, warning=FALSE, fig.width=5, fig.height=2}
+h1 <- ggAcf(std_resid^2) +
+  ggtitle("ACF: Squared Standardized Residuals") +
+  theme_minimal(base_size = 10) +
+  theme(
+    plot.title = element_text(face = "bold", hjust = 0.5),
+    panel.grid.minor = element_blank()
+  )
+
+h1
+```
+
+\newpage
+
+The diagnostic plots for the GARCH(1,1) model indicate that the standardized residuals behave largely like white noise, with no clear patterns remaining in the residual time series. The ACF of the standardized residuals shows no significant autocorrelation, suggesting that the model has adequately captured any linear dependence in the mean. Similarly, the ACF of the squared standardized residuals does not exhibit any significant spikes, indicating that the model has effectively accounted for any remaining volatility clustering.
+
+The histogram and Q-Q plot of the standardized residuals suggest some deviation from normality, with the presence of outliers and slight skewness. However, such behavior is common in financial return series and does not necessarily indicate model inadequacy.
+
+Overall, the diagnostic results suggest that the GARCH(1,1) model sufficiently captures the volatility dynamics present in the data. However, consistent with earlier findings from the ACF of squared returns and the ARCH test, the volatility structure in this dataset appears to be relatively weak. As a result, while the GARCH model provides a reasonable fit, it does not reveal strong evidence of persistent time-varying volatility, reinforcing the conclusion that the return series is largely stable in both its mean and variance.
+
+\newpage
+
+# 5. Conclusion and Future Study
+
+\
+\
+
+This study examined the time series behavior of stock opening prices from the National Stock Exchange using both SARIMA and GARCH modeling approaches. The initial analysis revealed that the original series was non-stationary, with a clear structural break and changing levels over time. After applying appropriate transformations, the data was successfully converted into a stationary series suitable for time series modeling.
+
+The SARIMA analysis indicated that a simple ARIMA(0,1,0) model provided the best fit for the data. This result suggests that, after removing the trend, the series behaves like a random walk with no significant autoregressive or moving average components. Diagnostic checks confirmed that the residuals resembled white noise, supporting the adequacy of the model. These findings are consistent with the widely observed behavior of financial time series, where price changes are often difficult to predict and exhibit minimal serial dependence.
+
+To complement the analysis of the mean structure, a GARCH(1,1) model was applied to the log return series to investigate time-varying volatility. However, both the ACF of squared returns and the ARCH test provided little evidence of conditional heteroskedasticity. The estimated conditional volatility showed only a brief spike followed by a stable pattern, and diagnostic results indicated that volatility clustering was weak. As a result, while the GARCH model was able to capture the limited variability present, it did not reveal strong or persistent volatility dynamics in the dataset.
+
+Overall, the results suggest that the stock price series is largely characterized by random fluctuations in both its mean and variance, with limited predictable structure. This highlights the inherent difficulty of forecasting financial time series using classical statistical models, particularly over short time horizons.
+
+For future study, several extensions could be explored to improve the analysis. First, incorporating a longer time horizon or additional datasets may provide more insight into potential volatility patterns that were not evident in this sample. Second, more advanced models such as ARIMA-GARCH combinations, regime-switching models, or state space models could be considered to capture structural breaks and changing dynamics more effectively. Finally, machine learning approaches could be explored to detect nonlinear patterns that traditional time series models may fail to capture. These extensions may provide a more comprehensive understanding of stock price behavior and improve forecasting performance.
+
+\newpage
+
+# References
+
+**Kaggle:** https://www.kaggle.com/datasets/atulanandjha/national-stock-exchange-time-series
+
+# Appendix
+
+## R Code
+
+```{r, echo=TRUE, eval=FALSE}
+
+# Load Libraries
+
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+library(knitr)
+library(tseries)
+library(forecast)
+library(patchwork)
+library(FinTS)
+library(rugarch)
+
+# Load Data
+
+stock_data <- read.csv("infy_stock.csv")
+open_stock <- stock_data %>% select(Date, Open)
+head <- head(open_stock, 10)
+kable(head, caption="First 10 Days of Trading")
+
+# SARIMA
+
+open_stock$Date <- as.Date(open_stock$Date)
+ggplot(open_stock, aes(x = Date, y = Open)) +
+  geom_line(linewidth = 0.6) +
+  labs(
+    title = "Opening Stock Price Over Time",
+    x = "Date",
+    y = "Open Price"
+  ) +
+  theme_minimal(base_size = 11) +
+  theme(
+    plot.title = element_text(face = "bold", hjust = 0.5),
+    axis.title = element_text(face = "bold"),
+    panel.grid.minor = element_blank()
+  )
+
+pval <- adf.test(open_stock$Open)$p.value
+lambda <- BoxCox.lambda(open_stock$Open)
+
+diff_open <- diff(open_stock$Open)
+diff_log_open <- diff(log(open_stock$Open))
+
+open_stock <- open_stock %>%
+  arrange(Date) %>%
+  mutate(
+    diff_open = c(NA, diff(Open)),
+    diff_log_open = c(NA, diff(log(Open)))
+  )
+
+plot_data <- open_stock %>%
+  select(Date, diff_open, diff_log_open) %>%
+  pivot_longer(
+    cols = c(diff_open, diff_log_open),
+    names_to = "Series",
+    values_to = "Value"
+  )
+
+ggplot(plot_data, aes(x = Date, y = Value)) +
+  geom_line(linewidth = 0.5) +
+  facet_wrap(~ Series, ncol = 2, scales = "free_y") +
+  labs(
+    title = "Comparison of Transformed Series",
+    x = "Date",
+    y = "Value"
+  ) +
+  scale_x_date(date_breaks = "1 year", date_labels = "%Y") +
+  theme_minimal(base_size = 11) +
+  theme(
+    plot.title = element_text(face = "bold", hjust = 0.5),
+    axis.title = element_text(face = "bold"),
+    strip.text = element_text(face = "bold"),
+    panel.grid.minor = element_blank()
+  )
+
+acf_diff <- ggAcf(diff_open) +
+  ggtitle("ACF: Diff(Open)") +
+  theme_minimal(base_size = 11)
+
+pacf_diff <- ggPacf(diff_open) +
+  ggtitle("PACF: Diff(Open)") +
+  theme_minimal(base_size = 11)
+
+acf_logdiff <- ggAcf(diff_log_open) +
+  ggtitle("ACF: Diff(log(Open))") +
+  theme_minimal(base_size = 11)
+
+pacf_logdiff <- ggPacf(diff_log_open) +
+  ggtitle("PACF: Diff(log(Open))") +
+  theme_minimal(base_size = 11)
+
+(acf_diff + pacf_diff) /
+(acf_logdiff + pacf_logdiff)
+
+fit_diff <- auto.arima(diff_open)
+fit_diff_log <- auto.arima(diff_log_open)
+
+summary(fit_diff)
+summary(fit_diff_log)
+
+create_diag_plots <- function(fit, label) {
+  
+  res <- residuals(fit)
+  
+  common_theme <- theme_minimal(base_size = 9) +
+    theme(
+      plot.title = element_text(face = "bold", hjust = 0.5, size = 9),
+      axis.title = element_text(size = 8),
+      axis.text = element_text(size = 7),
+      panel.grid.minor = element_blank(),
+      plot.margin = margin(5, 5, 5, 5)
+    )
+  
+  p1 <- autoplot(res) +
+    ggtitle("Residuals") +
+    common_theme
+  
+  p2 <- ggAcf(res) +
+    ggtitle("ACF") +
+    common_theme
+  
+  p3 <- ggplot(data.frame(res), aes(x = res)) +
+    geom_histogram(bins = 25, fill = "gray70", color = "black") +
+    ggtitle("Histogram") +
+    xlab("") +
+    common_theme
+  
+  p4 <- ggplot(data.frame(res), aes(sample = res)) +
+    stat_qq() +
+    stat_qq_line() +
+    ggtitle("Q-Q Plot") +
+    common_theme
+  
+  # Add label as a subtitle instead of cluttering titles
+  ((p1 + p2) / (p3 + p4)) +
+    plot_annotation(title = label)
+}
+
+diag_diff <- create_diag_plots(fit_diff, "Diff(Open)")
+diag_log <- create_diag_plots(fit_diff_log, "Diff(log(Open))")
+
+diag_diff | diag_log
+
+# GARCH
+
+log_returns <- diff(log(open_stock$Open))
+log_returns <- na.omit(log_returns)
+
+returns_df <- data.frame(
+  Date = open_stock$Date[-1],
+  Log_Return = as.numeric(log_returns)
+)
+
+ggplot(returns_df, aes(x = Date, y = Log_Return)) +
+  geom_line(linewidth = 0.5) +
+  labs(
+    title = "Log Returns Over Time",
+    x = "Date",
+    y = "Log Return"
+  ) +
+  scale_x_date(date_breaks = "1 year", date_labels = "%Y") +
+  theme_minimal(base_size = 11) +
+  theme(
+    plot.title = element_text(face = "bold", hjust = 0.5),
+    axis.title = element_text(face = "bold"),
+    panel.grid.minor = element_blank()
+  )
+
+p1 <- ggAcf(log_returns) +
+  ggtitle("ACF: Log Returns") +
+  theme_minimal(base_size = 10) +
+  theme(
+    plot.title = element_text(face = "bold", hjust = 0.5),
+    panel.grid.minor = element_blank()
+  )
+
+p2 <- ggAcf(log_returns^2) +
+  ggtitle("ACF: Squared Log Returns") +
+  theme_minimal(base_size = 10) +
+  theme(
+    plot.title = element_text(face = "bold", hjust = 0.5),
+    panel.grid.minor = element_blank()
+  )
+
+p1 | p2
+
+spec <- ugarchspec(
+  variance.model = list(model = "sGARCH", garchOrder = c(1,1)),
+  mean.model = list(armaOrder = c(0,0), include.mean = FALSE),
+  distribution.model = "norm"
+)
+
+fit_garch <- ugarchfit(spec = spec, data = log_returns)
+
+vol_df <- data.frame(
+  Date = open_stock$Date[-1],
+  Volatility = as.numeric(sigma(fit_garch))
+)
+
+ggplot(vol_df, aes(x = Date, y = Volatility)) +
+  geom_line(linewidth = 0.5) +
+  labs(
+    title = "Estimated Conditional Volatility from GARCH(1,1)",
+    x = "Date",
+    y = "Conditional Volatility"
+  ) +
+  scale_x_date(date_breaks = "1 year", date_labels = "%Y") +
+  theme_minimal(base_size = 11) +
+  theme(
+    plot.title = element_text(face = "bold", hjust = 0.5),
+    axis.title = element_text(face = "bold"),
+    panel.grid.minor = element_blank()
+  )
+
+std_resid <- residuals(fit_garch, standardize = TRUE)
+std_resid <- as.numeric(std_resid)
+
+g1 <- autoplot(ts(std_resid)) +
+  ggtitle("Standardized Residuals") +
+  theme_minimal(base_size = 9) +
+  theme(plot.title = element_text(face = "bold", hjust = 0.5),
+        panel.grid.minor = element_blank())
+
+g2 <- ggAcf(std_resid) +
+  ggtitle("ACF: Standardized Residuals") +
+  theme_minimal(base_size = 9) +
+  theme(plot.title = element_text(face = "bold", hjust = 0.5),
+        panel.grid.minor = element_blank())
+
+g3 <- ggplot(data.frame(std_resid), aes(x = std_resid)) +
+  geom_histogram(bins = 25, fill = "gray70", color = "black") +
+  ggtitle("Histogram") +
+  theme_minimal(base_size = 9) +
+  theme(plot.title = element_text(face = "bold", hjust = 0.5),
+        panel.grid.minor = element_blank())
+
+g4 <- ggplot(data.frame(std_resid), aes(sample = std_resid)) +
+  stat_qq() +
+  stat_qq_line() +
+  ggtitle("Q-Q Plot") +
+  theme_minimal(base_size = 9) +
+  theme(plot.title = element_text(face = "bold", hjust = 0.5),
+        panel.grid.minor = element_blank())
+
+(g1 + g2) / (g3 + g4)
+
+h1 <- ggAcf(std_resid^2) +
+  ggtitle("ACF: Squared Standardized Residuals") +
+  theme_minimal(base_size = 10) +
+  theme(
+    plot.title = element_text(face = "bold", hjust = 0.5),
+    panel.grid.minor = element_blank()
+  )
+
+h1
+
+```
+
+\newpage
+
+## Mathematical Formulas
+
+### ARIMA model:
+
+$$
+\begin{aligned}
+X_t=X_{t-1}+\epsilon_t 
+\end{aligned}
+$$
+
+### GARCH(1,1):
+
+$$
+\begin{aligned}
+\sigma^2_t=\omega+\alpha\epsilon^2_{t-1}+\beta\sigma^2_{t-1}
+\end{aligned}
+$$
+
+
